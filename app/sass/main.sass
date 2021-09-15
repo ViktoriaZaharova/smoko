@@ -1,0 +1,978 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  color: $text
+  background: #F9FAFC
+
+html, body
+  overflow-x: hidden
+  height: 100%
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0
+  box-sizing: border-box
+  font-family: $default-font
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.container
+  max-width: 1190px
+  padding: 0 10px
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
+  padding: 0 10px
+
+.row
+  margin: 0 -10px
+
+.btn, button
+  font-family: $default-font
+  padding: 0
+  outline: none
+  box-shadow: none
+  font-size: 16px
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  border-radius: 5px
+  width: 100%
+  max-width: 178px
+
+.btn-accent
+  background: $accent
+  color: #fff
+  box-shadow: 0 5px 10px rgba(95, 165, 152, 0.3)
+  height: 40px
+  &:hover
+    background: #D0F2EC
+    color: $text
+
+
+.wrapper
+  display: flex
+  flex-direction: column
+  min-height: 100%
+
+.content
+  flex: 1 0 auto
+
+footer
+  flex: 0 0 auto
+
+h1
+  text-transform: uppercase
+  font-weight: bold
+  margin: 0 0 19px
+  width: 100%
+  font-size: 36px
+
+h2, .title
+  text-align: center
+  width: 100%
+  text-transform: uppercase
+  font-size: 24px
+  font-weight: bold
+
+.title
+  width: fit-content
+  margin: 0 auto
+
+h3
+  text-transform: uppercase
+  font-weight: bold
+  font-size: 24px
+
+.svg-icon
+  width: 100%
+  height: 100%
+  display: inline-block
+
+strong
+  font-weight: bold
+  display: inline
+
+.box-text
+  line-height: 151.26%
+  font-size: 14px
+  p
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+
+.svg-icon-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+
+.fill-none
+  fill: none
+
+.mb-35
+  margin-bottom: 35px
+
+
+//main
+.home
+  background: url("../img/bg1.jpg") no-repeat center
+    size: cover
+  position: relative
+  padding: 158px 0 150px
+  color: #fff
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 122px
+    background: url("../img/figure.svg") no-repeat center top
+      size: cover
+  .box-text
+    font-size: 18px
+    line-height: 151.26%
+  h1
+    font-size: 64px
+    margin: 0 0 15px
+
+.application
+  li
+    margin: 0 0 26px
+    &:last-child
+      margin: 0
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      max-width: 180px
+      width: 100%
+
+.social
+  text-align: center
+  font-size: 14px
+  p
+    margin: 0 auto 24px
+
+.list-social
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  li
+    margin: 0 auto 24px
+    &:last-child
+      margin: 0
+    a
+      fill: $accent
+      display: flex
+      align-items: center
+      justify-content: center
+      &:hover
+        fill: $text
+
+.vk-links
+  width: 44px
+  height: 26px
+
+.inst-links
+  width: 30px
+  height: 31px
+
+.telegram-links
+  width: 33px
+  height: 29px
+
+//about
+.about
+  padding: 6px 0 180px
+  h2
+    margin: 0 auto 28px
+  .tab-content
+    margin: 27px 0 0
+
+
+.nav-tabs
+  justify-content: space-between
+  border: none
+    radius: 0
+  .nav-link
+    padding: 0
+    background: #C3F5EC
+    border: none
+      radius: 5px
+    margin: 0 0 17px
+    width: calc(50% - 10px)
+    color: $text
+    font-size: 14px
+    font-family: $default-font
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 40px
+  .nav-link.active
+    background: $accent
+    color: #fff
+
+
+.sorting-box
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 32px auto
+  font-size: 14px
+  width: fit-content
+  p
+    margin: 0 16px 0 0
+
+.select
+  border: none
+    radius: 0
+  background: url("../img/arrow-bottom.svg") no-repeat right center
+    size: 15px
+  padding: 0 23px 0 0
+  appearance: none
+  color: #464646
+  font-size: 14px
+  font-weight: 500
+
+.nav-tabs-my
+  .nav-link
+    width: calc(16.666% - 10px)
+    margin: 0 0 21px
+    font-size: 18px
+
+.brand-box
+  background: #fff
+  width: 100%
+  height: 100%
+  text-align: center
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1)
+  border-radius: 5px
+  color: #fff
+  text-transform: uppercase
+  font-weight: bold
+  font-size: 18px
+  &:hover
+    color: #fff
+  &__icon
+    width: 100%
+    height: 171px
+    padding: 40px 22px
+    display: flex
+    align-items: center
+    justify-content: center
+  &__title
+    background: $accent
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 53px
+    box-shadow: 0px 5px 10px rgba(95, 165, 152, 0.3)
+    border-radius: 5px
+  img
+    max-height: 100%
+
+.brands-section
+  margin: 20px 0 60px
+
+.menu-brands
+  a
+    margin: 0 0 38px
+    color: $text
+    background: #D0F2EC
+    border-radius: 5px
+    width: 100%
+    height: 40px
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    &:hover
+      background: $accent
+      color: #fff
+      box-shadow: 0px 5px 10px rgba(95, 165, 152, 0.3)
+  .active
+    background: $accent
+    color: #fff
+    box-shadow: 0px 5px 10px rgba(95, 165, 152, 0.3)
+
+.breadcrumb
+  margin: 0 0 19px
+  padding: 0
+  background: transparent
+  border-radius: 0
+  font-size: 14px
+  a
+    color: #969696
+    &:hover
+      color: $accent
+
+.breadcrumb-item
+  display: flex
+  align-items: center
+
+.breadcrumb-item.active
+  font-weight: 700
+
+.breadcrumb-item+.breadcrumb-item
+  padding-left: 7px
+
+.breadcrumb-item+.breadcrumb-item::before
+  padding-right: 5px
+  color: #969696
+
+.brand-card
+  width: 100%
+  &-img
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1)
+    background: #fff
+    margin: 0 0 30px
+    height: 179px
+    padding: 32px 42px 26px
+    display: flex
+    align-items: center
+    justify-content: center
+  .box-text
+    font-size: 14px
+    max-width: 243px
+    width: 100%
+  .list-social
+    flex-direction: row
+    align-items: center
+    flex-wrap: wrap
+    justify-content: flex-start
+    margin: 14px 0 0
+    li
+      margin: 0 17px 0 0
+  .vk-links
+    width: 27px
+    height: 16px
+  .inst-links
+    width: 18px
+  .telegram-links
+    width: 20px
+    height: 18px
+
+.youtube-links
+  width: 25px
+  height: 18px
+
+.fb-links
+  width: 17px
+  height: 18px
+
+.rating-brand
+  display: flex
+  align-items: center
+  color: $accent
+  margin: 24px 0 20px
+  .svg-icon
+    fill: none
+    stroke: $accent
+
+.rating-brand__links
+  width: 22px
+  height: 19px
+  margin: 0 22px 0 0
+
+.links-accent
+  color: $accent
+  &:hover
+    color: $text
+
+.brand-info-box
+  margin: 0 0 44px
+  h3
+    text-transform: none
+    margin: 0 0 30px
+  .box-text
+    font-size: 18px
+
+.brand-info-gallery
+  margin: 100px 0 0
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+
+
+.brand-info-gallery__item
+  width: 128px
+  height: 128px
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 20px 30px 0
+  &:last-child
+    margin-right: 0
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.brand-section-page
+  margin: 0
+
+.nav-pages
+  margin: 45px 0
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0 30px 0 0
+    &:last-child
+      margin: 0
+    span
+      font-size: 24px
+      font-weight: bold
+
+    a
+      color: $accent
+      display: flex
+      align-items: center
+    .svg-icon
+      fill: none
+      stroke: $accent
+      margin: 0 10px 0 0
+      height: 13px
+      width: 6px
+
+.news-brand
+  padding: 45px 0 80px
+
+.news-brand-card
+  width: 100%
+  margin: 0 0 40px
+  background: #fff
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1)
+  border-radius: 15px
+  &__dates
+    background: $accent
+    border-radius: 15px 0px 0px 15px
+    color: #fff
+    width: 178px
+    text-transform: uppercase
+    text-align: right
+    padding: 24px 26px
+  &__content
+    width: calc(100% - 178px)
+    padding: 24px 38px 20px 20px
+  .box-text
+    line-height: 25px
+    font-size: 22px
+    margin: 9px 0 17px
+    max-width: 520px
+    width: 100%
+  &__footer
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+  .links-share
+    margin: 0 auto 0 38px
+
+
+
+.date-num
+  font-size: 40px
+  font-weight: bold
+
+.links-rating, .links-share
+  display: flex
+  align-items: center
+  color: $accent
+  &__icon
+    stroke: $accent
+    margin: 0 8px 0 0
+
+.links-rating__icon
+  width: 25px
+  height: 22px
+
+.links-share__icon
+  width: 22px
+  height: 22px
+
+.date-year
+  font-size: 24px
+
+.gallery-brand-card
+  width: 100%
+  background: #fff
+  margin: 0 0 30px
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1)
+  border-radius: 15px
+  padding: 19px 10px 22px
+  display: flex
+  align-items: flex-start
+  .brand-info-gallery
+    justify-content: flex-end
+    margin: 0
+    padding: 0 20px 0 0
+  .brand-info-gallery__item
+    width: 139px
+    height: 114px
+    margin: 0 15px 0 0
+    &:last-child
+      margin: 0
+  h3
+    margin: 0 0 15px
+
+.gallery-brand-card__dates
+  text-align: right
+  font-size: 24px
+  font-weight: bold
+  color: $accent
+  span
+    font-size: 14px
+    margin: 11px 0 0
+    display: block
+
+.video-box
+  width: 100%
+  font-size: 14px
+  &__preview
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 212px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: 100%
+    padding: 11px 0 0
+  &__title
+    margin: 0 0 6px
+    color: #000000
+    font-size: 14px
+    font-weight: bold
+    &:hover
+      color: $accent
+  &__footer
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+  &__category
+    color: #000000
+    &:hover
+      color: $accent
+  &__date
+    color: $accent
+    display: flex
+    align-items: center
+    margin: 0 0 0 auto
+    p
+      margin: 0 10px 0 0
+      &:last-child
+        margin: 0
+
+.contact-brand
+  h3
+    text-transform: none
+    margin: 0 0 40px
+  .btn-group
+    flex-wrap: wrap
+    .btn
+      border-radius: 10px
+      margin: 0 0 23px
+      font-size: 14px
+      &:not(:last-child)
+        border-radius: 10px
+      &:last-child
+        margin: 0
+  .schedule
+    margin: 30px 0
+
+.contacts-box
+  color: #17182F
+  font-size: 18px
+  a
+    color: #17182F
+
+.total-rating-brand
+  margin: 0 0 28px
+  width: 100%
+  display: flex
+  align-items: flex-end
+  flex-wrap: wrap
+
+.list-rating
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 34px 0 18px
+  li
+    width: 12px
+    height: 12px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 7px 0 0
+    fill: $accent
+    &:last-child
+      margin: 0
+  .star0
+    fill: #969696
+  .star-0
+    fill: none
+
+.total-rating-brand__val
+  color: $accent
+  font-size: 36px
+  font-weight: bold
+  margin: 0 0 -5px
+
+.grade
+  font-size: 14px
+
+.details-rating-row
+  width: 100%
+  margin: 0 0 19px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+  &:last-child
+    margin: 0
+  p
+    font-size: 12px
+    min-width: 30px
+
+.details-rating-row__val
+  font-size: 14px
+  width: 90px
+
+.details-rating-row__line
+  background: #C4C4C4
+  border-radius: 4px
+  position: relative
+  height: 14px
+  max-width: 406px
+  width: calc(100% - 90px - 40px)
+  margin: 0 auto 0 0
+
+.line-bg
+  position: absolute
+  left: 0
+  top: 0
+  height: 100%
+  background: $accent
+  border-radius: 4px
+  z-index: 1
+
+.line-bg-5
+  width: 80%
+
+.line-bg-4
+  width: 50%
+
+.line-bg-3, .line-bg-2
+  width: 20%
+
+.line-bg-1
+  width: 30%
+
+.sorting-reviews-brand
+  width: 100%
+  font-size: 14px
+  text-align: right
+  line-height: 151.26%
+
+.select-sorting
+  cursor: pointer
+  font-size: 14px
+  font-weight: 500
+  border: none
+  padding: 0 17px 0 0
+  background: url("../img/select.svg") no-repeat right center
+    size: 12px
+
+.checkbox
+  width: 100%
+  margin: 20px 0
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  font-size: 14px
+  font-family: $default-font
+
+.inp-check
+  display: none
+
+.checkbox-custom
+  width: 16px
+  height: 16px
+  min-width: 16px
+  border: 1px solid $accent
+  margin: 0 12px 0 0
+  transition: .3s ease
+  cursor: pointer
+
+.inp-check:checked + .checkbox-custom
+  background: $accent
+
+.reviews-brand-card
+  width: 100%
+  max-width: 674px
+  margin: 57px 0 0
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1)
+  background: #fff
+  border-radius: 15px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  padding: 27px 30px 21px 22px
+  .box-text
+    font-size: 14px
+    line-height: 151.26%
+
+.reviews-brand-card__col
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 90px
+  line-height: 151.26%
+
+
+.reviews-brand-card__content
+  width: calc(100% - 90px)
+  padding: 0 0 0 40px
+
+.reviews-ava
+  min-width: 80px
+  width: 80px
+  height: 80px
+  border-radius: 50%
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.reviews-name
+  color: $accent
+  margin: 10px 0
+  font-size: 14px
+  font-weight: bold
+
+.reviews-id
+  color: $accent
+  font-size: 12px
+  width: 100%
+
+.reviews-grade
+  margin: 20px 0 0
+
+.reviews-grade__val
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  background: $accent
+  color: #fff
+  text-align: center
+  width: 46px
+  height: 46px
+  font-size: 24px
+  font-weight: bold
+  margin: 0 auto 18px
+
+.reviews-grade__rating
+  width: 100%
+  margin: 0
+  li
+    fill: #FFBD00
+    width: 14px
+    height: 14px
+    margin: 0 5px 0 0
+
+.reviews-brand-card__top
+  width: 100%
+  max-width: 404px
+  border-bottom: 1px solid $accent
+  padding: 0 0 16px
+
+.reviews-brand-advantages
+  margin: 0 0 15px
+  width: 100%
+  &:last-child
+    margin: 0
+  h3
+    font-weight: bold
+    width: 100%
+    display: flex
+    align-items: center
+    margin: 0 0 8px
+    font-size: 14px
+    text-transform: none
+    color: $accent
+
+.title-icon
+  fill: $accent
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 16px
+  height: 16px
+  min-width: 16px
+  margin: 0 7px 0 0
+  border: 1px solid $accent
+    radius: 50%
+  padding: 4px
+
+.reviews-brand-card__bottom
+  padding: 11px 0 0
+
+.reviews-brand-card__footer
+  margin: 30px 0 0
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.share-links
+  fill: none
+  stroke: $accent
+  margin: 0 0 0 86px
+  width: 19px
+  height: 17px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.add-grade
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 0 auto
+  .svg-icon
+    fill: none
+    stroke: $accent
+    width: 15px
+    height: 14px
+
+.add-grade-links__val
+  color: #969696
+  margin: 0 0 -5px 2px
+  font-size: 12px
+
+.add-grade-links
+  display: flex
+  align-items: flex-end
+  margin: 0 10px 0 0
+  &:last-child
+    margin: 0
+
+
+@import "header"
+@import "footer"
+@import "media"
+// Всегда в конце

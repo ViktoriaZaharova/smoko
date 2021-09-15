@@ -1,0 +1,136 @@
+@import "fonts"
+@import "vars"
+
+header
+  padding: 43px 0
+
+.header
+  padding: 40px 0
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 2
+  .btn-burger
+    color: #fff
+    display: flex
+  .header-wrapper
+    align-items: flex-start
+
+.logo
+  max-width: 178px
+  width: 100%
+  display: flex
+  align-items: center
+
+.header-wrapper
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+
+
+.menu
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: space-between
+  font-size: 12px
+  font-weight: bold
+  text-transform: uppercase
+  max-width: 754px
+  width: 100%
+  margin: 0 50px 0 auto
+  li
+    margin: 0 0 6px 0
+    a
+      width: 100px
+      height: 30px
+      background: $accent
+      color: #fff
+      text-align: center
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 5px
+      &:hover
+        background: $accent-light
+        color: $text
+
+.links-cabinet
+  display: flex
+  align-items: center
+  margin: 5px 0 0
+  font-size: 8px
+  font-weight: bold
+  color: #fff
+  &__icon
+    fill: $accent
+    margin: 0 12px 0 0
+    width: 21px
+    height: 25px
+  &__text
+    max-width: 40px
+    width: 100%
+  &:hover
+    color: #fff
+
+.btn-burger
+  display: flex
+  align-items: center
+  color: $text
+  font-size: 14px
+  &:hover
+    color: $accent
+
+.btn-burger__icon
+  width: 28px
+  height: 24px
+  margin: 0 0 0 12px
+  fill: $accent
+
+
+.mobile-menu
+  position: fixed
+  right: 0
+  top: 0
+  z-index: 5
+  background: $accent
+  height: 100%
+  overflow-y: auto
+  padding: 40px 65px 70px
+  max-width: 351px
+  width: 100%
+  display: none
+
+.list-menu-mobile
+  font-size: 24px
+  li
+    margin: 0 0 36px
+    &:last-child
+      margin: 0
+    a
+      color: #fff
+
+.btn-close
+  margin: 0 0 20px auto
+  width: 24px
+  height: 24px
+  cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 12px
+    top: 0
+    width: 1px
+    height: 100%
+    background: #fff
+
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
