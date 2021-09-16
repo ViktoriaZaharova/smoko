@@ -63,6 +63,11 @@
   .reviews-brand-card
     margin: 30px 0 20px
 
+  .flavors-wrapper
+    margin: 0
+
+  .flavors-box__content
+    padding: 0 0 0 20px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 880px)
@@ -85,7 +90,6 @@
     font-size: 50px
 
   .nav-tabs-my .nav-link
-    width: calc(33.333% - 10px)
     font-size: 14px
 
   footer
@@ -186,6 +190,18 @@
   .checkbox
     justify-content: flex-start
 
+  .flavors-box
+    padding: 20px
+    font-size: 16px
+    &__title
+      font-size: 20px
+      margin: 0 0 10px
+    &__icon
+      max-width: 100px
+    &__content
+      padding: 0 0 0 10px
+      width: calc(100% - 100px)
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px)
   .home h1
@@ -221,9 +237,6 @@
 
 
 @media only screen and (max-width : 480px)
-  .nav-tabs-my .nav-link
-    width: calc(50% - 10px)
-
   footer
     .application
       li

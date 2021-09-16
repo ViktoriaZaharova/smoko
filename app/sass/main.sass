@@ -101,6 +101,7 @@ input, textarea, select
   padding: 0
   box-sizing: border-box
   font-family: $default-font
+  cursor: pointer
   &:hover, &:focus
     outline: none
     box-shadow: none
@@ -206,6 +207,8 @@ strong
 .mb-35
   margin-bottom: 35px
 
+.mb-20
+  margin-bottom: 20px
 
 //main
 .home
@@ -284,6 +287,9 @@ strong
     margin: 0 auto 28px
   .tab-content
     margin: 27px 0 0
+  .tabs-navigation
+    .nav-link
+      border-radius: 10px
 
 
 .nav-tabs
@@ -295,8 +301,9 @@ strong
     background: #C3F5EC
     border: none
       radius: 5px
-    margin: 0 0 17px
-    width: calc(50% - 10px)
+    //margin: 0 0 17px
+    //width: calc(50% - 10px)
+    //height: 100%
     color: $text
     font-size: 14px
     font-family: $default-font
@@ -333,9 +340,11 @@ strong
 
 .nav-tabs-my
   .nav-link
-    width: calc(16.666% - 10px)
-    margin: 0 0 21px
+    width: 100%
+    //width: calc(16.666% - 10px)
+    //margin: 0 0 21px
     font-size: 18px
+
 
 .brand-box
   background: #fff
@@ -970,6 +979,41 @@ strong
   margin: 0 10px 0 0
   &:last-child
     margin: 0
+
+//flavors
+.flavors-wrapper
+  margin: 32px 0 0
+
+.flavors-box
+  background: #fff
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1)
+  border-radius: 10px
+  padding: 30px
+  color: $text
+  font-size: 18px
+  &:hover
+    color: $accent
+  &__icon
+    max-width: 139px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+  &__content
+    width: calc(100% - 139px)
+    padding: 0 0 0 80px
+  &__title
+    font-size: 24px
+    font-weight: bold
+    margin: 0 0 16px
+    display: block
+    text-transform: uppercase
+
+
 
 
 @import "header"
