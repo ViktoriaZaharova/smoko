@@ -263,6 +263,9 @@ strong {
 .mb-20 {
   margin-bottom: 20px; }
 
+.mb-24 {
+  margin-bottom: 24px; }
+
 .color-accent {
   color: #5FA598; }
 
@@ -1668,7 +1671,7 @@ a.color-accent:hover {
   margin: 0; }
 
 .mixes-section .nav-tabs-my {
-  margin: 20px 0 10px; }
+  margin: 20px -10px 10px; }
   .mixes-section .nav-tabs-my .nav-link {
     font-weight: bold;
     font-size: 24px;
@@ -1722,6 +1725,36 @@ a.color-accent:hover {
     .form-search button .svg-icon {
       width: 13px;
       height: 13px; }
+
+.mixes-category {
+  background: #5FA598;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 5px 10px rgba(95, 165, 152, 0.3);
+          box-shadow: 0px 5px 10px rgba(95, 165, 152, 0.3);
+  border-radius: 10px;
+  text-align: center;
+  padding: 25px 10px 15px;
+  font-size: 24px;
+  font-weight: bold;
+  height: 157px; }
+  .mixes-category__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 77px;
+    margin: 0 auto 20px; }
+    .mixes-category__icon img {
+      max-height: 100%; }
+  .mixes-category:hover {
+    background: #D0F2EC;
+    color: #fff; }
 
 @font-face {
   font-family: "gotham";
@@ -2080,7 +2113,11 @@ footer {
     font-size: 13px; }
   .flavor-page-details__img {
     max-width: 400px;
-    margin: 0 auto 30px; } }
+    margin: 0 auto 30px; }
+  .mixes-section .sorting-box {
+    margin: 0 0 20px; }
+  .form-search {
+    margin: 0 0 20px auto; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 880px) {
@@ -2206,7 +2243,12 @@ footer {
   .sorting-wrapper {
     margin: 30px 0 0; }
   .modal-body {
-    padding: 0 10px; } }
+    padding: 0 10px; }
+  .form-search {
+    margin: 0 0 20px; }
+  .mixes-section .nav-tabs-my .nav-link {
+    font-size: 18px;
+    height: 40px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -2241,7 +2283,9 @@ footer {
   .flavor-card-characteristics__item {
     margin: 0 10px 10px 0; }
     .flavor-card-characteristics__item:last-child {
-      margin: 0 0 10px; } }
+      margin: 0 0 10px; }
+  .mixes-category {
+    font-size: 18px; } }
 
 @media only screen and (max-width: 480px) {
   footer .application li a {
@@ -2342,7 +2386,12 @@ footer {
     padding: 0;
     margin: 0; }
   .flavor-page-details .reviews-brand-card__col {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .mixes-category {
+    height: 140px;
+    font-size: 16px; }
+    .mixes-category__icon {
+      height: 57px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px) {
