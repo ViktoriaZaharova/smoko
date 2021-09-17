@@ -106,6 +106,10 @@ input, textarea, select
     outline: none
     box-shadow: none
 
+label
+  width: 100%
+  display: block
+
 .container
   max-width: 1190px
   padding: 0 10px
@@ -207,8 +211,24 @@ strong
 .mb-35
   margin-bottom: 35px
 
+.mb-39
+  margin-bottom: 39px
+
 .mb-20
   margin-bottom: 20px
+
+.color-accent
+  color: $accent
+
+a.color-accent
+  &:hover
+    color: #000
+
+.color-grey
+  color: #969696
+
+.d-inline
+  display: inline
 
 //main
 .home
@@ -301,9 +321,6 @@ strong
     background: #C3F5EC
     border: none
       radius: 5px
-    //margin: 0 0 17px
-    //width: calc(50% - 10px)
-    //height: 100%
     color: $text
     font-size: 14px
     font-family: $default-font
@@ -337,12 +354,11 @@ strong
   color: #464646
   font-size: 14px
   font-weight: 500
+  height: auto
 
 .nav-tabs-my
   .nav-link
     width: 100%
-    //width: calc(16.666% - 10px)
-    //margin: 0 0 21px
     font-size: 18px
 
 
@@ -684,18 +700,22 @@ strong
   h3
     text-transform: none
     margin: 0 0 40px
-  .btn-group
-    flex-wrap: wrap
-    .btn
-      border-radius: 10px
-      margin: 0 0 23px
-      font-size: 14px
-      &:not(:last-child)
-        border-radius: 10px
-      &:last-child
-        margin: 0
+
   .schedule
     margin: 30px 0
+
+.btn-group
+  flex-wrap: wrap
+  .btn
+    border-radius: 10px
+    margin: 0 0 23px
+    font-size: 14px
+    &:not(:last-child)
+      border-radius: 10px
+    &:last-child
+      margin: 0
+  .btn:not(:last-child):not(.dropdown-toggle), .btn:not(:first-child)
+    border-radius: 10px
 
 .contacts-box
   color: #17182F
@@ -774,7 +794,7 @@ strong
   border-radius: 4px
   z-index: 1
 
-.line-bg-5
+.line-bg-5, .line-bg-8
   width: 80%
 
 .line-bg-4
@@ -785,6 +805,13 @@ strong
 
 .line-bg-1
   width: 30%
+
+.line-bg-9
+  width: 90%
+
+.line-bg-7
+  width: 70%
+
 
 .sorting-reviews-brand
   width: 100%
@@ -821,9 +848,23 @@ strong
   margin: 0 12px 0 0
   transition: .3s ease
   cursor: pointer
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 12px
+    height: 12px
+    background: url("../img/checkbox.svg") no-repeat center
+      size: 100%
+    transition: .3s ease
+    opacity: 0
 
 .inp-check:checked + .checkbox-custom
-  background: $accent
+  &:before
+    opacity: 1
 
 .reviews-brand-card
   width: 100%
@@ -1013,10 +1054,317 @@ strong
     display: block
     text-transform: uppercase
 
+.flavor-page-line
+  width: 100%
+  display: flex
+  align-items: flex-end
+  flex-wrap: wrap
+  h3
+    text-transform: none
+    font-weight: normal
 
 
+.sorting-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: flex-start
+  margin: 75px 0 0
+  .sorting-box
+    width: fit-content
+    justify-content: flex-start
+    margin: 0 50px 26px 0
+    &:last-child
+      margin: 0 0 26px
+
+
+//flavor-page
+.flavor-page
+  h1
+    margin: 25px 0 8px
+
+.result-total
+  margin: 0 0 0 16px
+  font-size: 14px
+
+
+.flavor-card
+  width: 100%
+  display: flex
+  align-items: stretch
+  &__img
+    width: 176px
+    height: 177px
+    background: #fff
+    display: flex
+    align-items: center
+    justify-content: center
+    filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.1))
+    border-radius: 10px
+    overflow: hidden
+  &__body
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    width: calc(100% - 176px)
+    padding: 5px 0 0 20px
+  &__cat
+    margin: 8px 0 18px
+    font-size: 18px
+  .btn
+    margin: auto 0 0
+
+.flavor-card-characteristics
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: auto 0 0
+
+.flavor-card-characteristics__item
+  width: 178px
+  height: 40px
+  margin: 0 10px 0 0
+  font-size: 18px
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #D0F2EC
+  border-radius: 5px
+  &:last-child
+    margin: 0
+
+.modal-flavor
+  .flavor-card__img
+    width: 117px
+    height: 117px
+  .flavor-card__body
+    width: calc(100% - 117px)
+  .flavor-card
+    margin: 0 0 40px
+
+
+.description-flavor
+  h4
+    font-size: 18px
+    font-weight: bold
+    margin: 0 0 19px
+
+.grade-flavor
+  .details-rating-row__line
+    height: 8px
+    width: calc(100% - 130px - 20px)
+    max-width: none
+  .details-rating-row__val
+    width: 111px
+    font-size: 12px
+  .details-rating-row p
+    width: 20px
+
+
+.overall-assessment
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+
+.overall-assessment__item
+  margin: 12px 9px 0 0
+  display: flex
+  align-items: center
+  color: #fff
+  background: $accent
+  border-radius: 4px
+  padding: 2px 6px 2px 8px
+  font-size: 8px
+  h5
+    font-size: 18px
+    font-weight: bold
+    margin: 0 0 0 5px
+    line-height: 1
+  &:last-child
+    margin-right: 0
+
+.flavor-rating
+  .total-rating-brand
+    margin: 0 0 18px
+  .total-rating-brand__val
+    font-size: 24px
+    color: $text
+  .details-rating
+    column-count: 2
+  .details-rating-row
+    margin: 0 0 17px
+  .details-rating-row__line
+    height: 8px
+    width: calc(100% - 70px - 40px)
+  .details-rating-row__val
+    width: 70px
+    font-size: 12px
+  .btn-group
+    width: 100%
+    .btn
+      margin: 0 17px 0 0
+      &:last-child
+        margin: 0
+
+.flavor-card-reviews
+  margin: 34px auto 0
+  .reviews-brand-card__top
+    border: none
+    padding: 0
+
+.load-more
+  width: fit-content
+  margin: 21px auto 0
+
+//flavor-page-details
+.flavor-page-details
+  h1
+    text-transform: none
+  .description-flavor
+    margin: 0 0 35px
+    h4
+      margin: 0 0 11px
+  .overall-assessment__item
+    flex-direction: column
+    background: #757575
+    font-size: 12px
+    font-weight: bold
+    margin: 0 23px 0 0
+    padding: 5px 20px
+    h5
+      font-size: 24px
+      margin: 0
+  .sorting-wrapper
+    margin: 22px 0 0
+  .flavor-card-reviews
+    margin: 0 0 30px
+    max-width: 770px
+    .reviews-grade
+      margin: 0
+  .reviews-brand-card__col
+    max-width: 46px
+  .reviews-brand-card__content
+    width: calc(100% - 46px)
+    padding: 0 0 0 23px
+
+.list-tags
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 15px 0 26px
+  font-size: 14px
+  max-width: 400px
+  width: 100%
+  li
+    margin: 0 8px 7px 0
+    background: #E9E9E9
+    border-radius: 5px
+    text-align: center
+    padding: 5px 7px
+
+.flavor-icons
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 16px 0 0
+    width: 42px
+    height: 42px
+    border: 1px solid #000000
+      radius: 50%
+    font-size: 10px
+    &:last-child
+      margin: 0
+
+.reviews-flavor-wrapper
+  border-top: 2px solid #E9E9E9
+  max-width: 571px
+  width: 100%
+  padding: 28px 0 0
+  .description-flavor
+    h4
+      margin: 0 0 25px
+  .total-rating-brand__val
+    color: $accent
+  .details-rating-row__val
+    font-size: 12px
+  .details-rating
+    column-count: 1
+  .details-rating-row__line
+    max-width: none
+    height: 13px
+  .btn-group
+    padding: 0 0 0 70px
+    margin: 10px 0 0
+
+.flavor-page-details__img
+  width: 100%
+  display: flex
+  align-items: center
+  img
+    width: 100%
+
+//.mixes-section
+.mixes-section
+  .sorting-box
+    margin: 0
+  .nav-tabs-my
+    margin: 20px 0 10px
+    .nav-link
+      font-weight: bold
+      font-size: 24px
+      color: #5FA598
+      text-transform: uppercase
+      height: 52px
+    .active
+      color: #fff
+
+
+.form-search
+  max-width: 376px
+  width: 100%
+  margin: 0 0 0 auto
+  position: relative
+  input
+    width: 100%
+    height: 30px
+    border: 1px solid #5FA598
+      radius: 10px
+    padding: 0 35px 0 15px
+    font-size: 14px
+    line-height: 1
+    color: #464646
+    &::placeholder
+      color: #464646
+  button
+    width: 35px
+    height: 30px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    right: 0
+    top: 0
+    border: none
+      radius: 10px
+    background: $accent
+    fill: #fff
+
+    .svg-icon
+      width: 13px
+      height: 13px
 
 @import "header"
 @import "footer"
+@import "modal"
 @import "media"
 // Всегда в конце
