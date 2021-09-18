@@ -42,6 +42,11 @@
     li
       margin: 0 10px 0 0
 
+  .mix-box
+    &__img
+      width: 150px
+    &__body
+      width: calc(100% - 150px)
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -238,6 +243,9 @@
     font-size: 18px
     height: 40px
 
+  .mix-page .form-search
+    margin: 0 0 23px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px)
   .home h1
@@ -382,6 +390,16 @@
     font-size: 16px
     &__icon
       height: 57px
+
+  .mix-box
+    &__img
+      margin: 0 auto
+    &__footer
+      margin: 10px 0 0
+    &__body
+      width: 100%
+      padding: 0
+      margin: 10px 0 0
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 360px)
