@@ -305,6 +305,10 @@ a.color-accent
 
       &:hover
         fill: $text
+    .no-active
+      fill: #E5E5E5
+      pointer-events: none
+
 
 .vk-links
   width: 44px
@@ -1647,6 +1651,189 @@ a.color-accent
     font-size: 18px
     font-weight: bold
     color: $accent
+
+//.hookah-section
+.hookah-section
+  .location-box
+    margin: 22px 0 30px
+
+.location-box
+  p
+    color: $accent
+
+
+.select-city
+  border: 1px solid #5FA598
+    radius: 10px
+  height: 30px
+  padding: 0 34px 0 19px
+  font-weight: normal
+  font-size: 14px
+  width: 277px
+  background-position: calc(100% - 16px) center
+
+.hookah-box
+  width: 100%
+  height: 100%
+  background: #fff
+  border-radius: 10px
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  padding: 22px 38px
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1)
+  h3
+    color: #17182F
+  &__img
+    width: 160px
+    height: 160px
+  &__body
+    width: calc(100% - 160px)
+    padding: 0 0 0 42px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  .address
+    margin: 18px 0
+    font-size: 16px
+  .btn
+    margin: auto 0 0
+
+//hookah-page
+.hookah-page
+  padding: 0 0 70px
+
+
+.hookah-card
+  .btn
+    font-size: 18px
+    margin: 0 0 14px
+    &:last-child
+      margin: 0
+  .rating-brand
+    margin: 33px 0 28px
+    font-size: 14px
+  .rating-brand__links
+    margin: 0 9px 0 0
+  .list-social
+    margin: 4px 0 0
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 22px
+    max-width: 174px
+    height: 174px
+    img
+      max-height: 100%
+
+.hookah-card-info
+  display: flex
+  align-items: flex-start
+  font-size: 18px
+  margin: 0 0 12px
+  width: 100%
+  &:last-child
+    margin: 0
+  &__icon
+    fill: $accent
+    width: 13px
+    height: 17px
+    min-width: 13px
+    margin: 0 17px 0 0
+
+.mail-links
+  margin: 30px 0 0
+
+.hookah-page-content
+  h3
+    text-transform: none
+    margin: 0 0 28px
+  .box-text
+    max-height: 834px
+    font-size: 18px
+    width: 100%
+    margin: 0 0 70px
+
+.hookah-photo
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 137px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+
+//.shop-page
+.shop-page
+  .box-text
+    margin: 0 0 30px
+  .mail-links
+    margin: 0 0 0 380px
+
+.shop-card
+  flex-wrap: wrap
+  display: flex
+  align-items: center
+  margin: 0 0 30px
+  .btn-group
+    .btn
+      margin: 0 0 14px
+      font-size: 18px
+  h3
+    margin: 0 0 15px
+    .svg-icon
+      width: 17px
+      height: 22px
+      min-width: 17px
+      fill: $text
+  .list-social
+    flex-direction: row
+    align-items: center
+    justify-content: flex-start
+    margin: 0 0 38px
+    li
+      margin: 0 20px 0 0
+      &:last-child
+        margin: 0
+  .rating-brand
+    margin: 0
+    font-size: 12px
+  .rating-brand__links
+    margin: 0 9px 0 0
+
+.shop-card__it
+  padding: 0 16px 0 0
+
+.shop-card__it-last
+  padding: 0 59px 0 22px
+  border-left: 2px solid #969696
+
+
+.phones
+  font-size: 18px
+  line-height: 137.37%
+
+.shop-card__img
+  width: 178px
+  height: 178px
+  min-width: 178px
+  margin: 0 20px 0 0
+  img
+    width: 100%
+
+.shop-photo
+  height: 293px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
 
 
 @import "header"

@@ -354,6 +354,9 @@ a.color-accent:hover {
               justify-content: center; }
       .list-social li a:hover {
         fill: #464646; }
+    .list-social li .no-active {
+      fill: #E5E5E5;
+      pointer-events: none; }
 
 .vk-links {
   width: 44px;
@@ -1913,6 +1916,231 @@ a.color-accent:hover {
     font-weight: bold;
     color: #5FA598; }
 
+.hookah-section .location-box {
+  margin: 22px 0 30px; }
+
+.location-box p {
+  color: #5FA598; }
+
+.select-city {
+  border: 1px solid #5FA598;
+    border-radius: 10px;
+  height: 30px;
+  padding: 0 34px 0 19px;
+  font-weight: normal;
+  font-size: 14px;
+  width: 277px;
+  background-position: calc(100% - 16px) center; }
+
+.hookah-box {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 22px 38px;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); }
+  .hookah-box h3 {
+    color: #17182F; }
+  .hookah-box__img {
+    width: 160px;
+    height: 160px; }
+  .hookah-box__body {
+    width: calc(100% - 160px);
+    padding: 0 0 0 42px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .hookah-box .address {
+    margin: 18px 0;
+    font-size: 16px; }
+  .hookah-box .btn {
+    margin: auto 0 0; }
+
+.hookah-page {
+  padding: 0 0 70px; }
+
+.hookah-card .btn {
+  font-size: 18px;
+  margin: 0 0 14px; }
+  .hookah-card .btn:last-child {
+    margin: 0; }
+
+.hookah-card .rating-brand {
+  margin: 33px 0 28px;
+  font-size: 14px; }
+
+.hookah-card .rating-brand__links {
+  margin: 0 9px 0 0; }
+
+.hookah-card .list-social {
+  margin: 4px 0 0; }
+
+.hookah-card__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 22px;
+  max-width: 174px;
+  height: 174px; }
+  .hookah-card__img img {
+    max-height: 100%; }
+
+.hookah-card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 18px;
+  margin: 0 0 12px;
+  width: 100%; }
+  .hookah-card-info:last-child {
+    margin: 0; }
+  .hookah-card-info__icon {
+    fill: #5FA598;
+    width: 13px;
+    height: 17px;
+    min-width: 13px;
+    margin: 0 17px 0 0; }
+
+.mail-links {
+  margin: 30px 0 0; }
+
+.hookah-page-content h3 {
+  text-transform: none;
+  margin: 0 0 28px; }
+
+.hookah-page-content .box-text {
+  max-height: 834px;
+  font-size: 18px;
+  width: 100%;
+  margin: 0 0 70px; }
+
+.hookah-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 137px; }
+  .hookah-photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.shop-page .box-text {
+  margin: 0 0 30px; }
+
+.shop-page .mail-links {
+  margin: 0 0 0 380px; }
+
+.shop-card {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 30px; }
+  .shop-card .btn-group .btn {
+    margin: 0 0 14px;
+    font-size: 18px; }
+  .shop-card h3 {
+    margin: 0 0 15px; }
+    .shop-card h3 .svg-icon {
+      width: 17px;
+      height: 22px;
+      min-width: 17px;
+      fill: #464646; }
+  .shop-card .list-social {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0 0 38px; }
+    .shop-card .list-social li {
+      margin: 0 20px 0 0; }
+      .shop-card .list-social li:last-child {
+        margin: 0; }
+  .shop-card .rating-brand {
+    margin: 0;
+    font-size: 12px; }
+  .shop-card .rating-brand__links {
+    margin: 0 9px 0 0; }
+
+.shop-card__it {
+  padding: 0 16px 0 0; }
+
+.shop-card__it-last {
+  padding: 0 59px 0 22px;
+  border-left: 2px solid #969696; }
+
+.phones {
+  font-size: 18px;
+  line-height: 137.37%; }
+
+.shop-card__img {
+  width: 178px;
+  height: 178px;
+  min-width: 178px;
+  margin: 0 20px 0 0; }
+  .shop-card__img img {
+    width: 100%; }
+
+.shop-photo {
+  height: 293px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .shop-photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
 @font-face {
   font-family: "gotham";
   font-weight: 400;
@@ -2278,7 +2506,30 @@ footer {
   .mixes-section .sorting-box {
     margin: 0 0 20px; }
   .form-search {
-    margin: 0 0 20px auto; } }
+    margin: 0 0 20px auto; }
+  .hookah-box {
+    padding: 20px; }
+    .hookah-box__img {
+      width: 120px;
+      height: 120px; }
+    .hookah-box__body {
+      width: calc(100% - 120px);
+      padding: 0 0 0 20px; }
+  .hookah-photo {
+    height: 160px; }
+  .hookah-page-content .box-text {
+    font-size: 16px;
+    margin: 0 0 30px; }
+  .hookah-page {
+    padding: 0 0 20px; }
+  .hookah-card {
+    margin: 20px auto 0; }
+  .shop-card__img {
+    width: 120px;
+    height: 120px;
+    min-width: 120px; }
+  .shop-card__it-last {
+    padding: 0 20px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 880px) {
@@ -2295,7 +2546,13 @@ footer {
     display: -ms-flexbox;
     display: flex; }
   .links-cabinet {
-    margin: 0 20px 0 0; } }
+    margin: 0 20px 0 0; }
+  .shop-card__it-last {
+    margin: 20px auto;
+    padding: 20px 0 0;
+    border: none;
+      border-top: 2px solid #969696;
+    width: 100%; } }
 
 @media only screen and (max-width: 768px) {
   .home h1 {
@@ -2411,7 +2668,9 @@ footer {
     font-size: 18px;
     height: 40px; }
   .mix-page .form-search {
-    margin: 0 0 23px; } }
+    margin: 0 0 23px; }
+  .shop-page .mail-links {
+    margin: 0 0 0 auto; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -2562,7 +2821,24 @@ footer {
   .mix-box__body {
     width: 100%;
     padding: 0;
-    margin: 10px 0 0; } }
+    margin: 10px 0 0; }
+  .select-city {
+    margin: 10px 0 0;
+    width: 100%; }
+  .hookah-box__img {
+    width: 80px;
+    height: 80px; }
+  .hookah-box__body {
+    width: calc(100% - 80px); }
+  .hookah-box .address {
+    font-size: 14px; }
+  .shop-page .mail-links {
+    width: 100%;
+    margin: 0 0 10px; }
+  .shop-card__img {
+    width: 80px;
+    height: 80px;
+    min-width: 80px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px) {
