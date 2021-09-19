@@ -48,6 +48,16 @@
     &__body
       width: calc(100% - 150px)
 
+  .select-city
+    max-width: 220px
+    width: 100%
+
+  .select-type
+    max-width: 150px
+
+  .event-address
+    margin: 0 auto 0 0
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
   header
@@ -126,6 +136,37 @@
 
   .shop-card__it-last
     padding: 0 20px
+
+  .events-section .form-search
+    margin: 0 0 20px
+
+  .event-box
+    &__img
+      width: 150px
+    &__body
+      width: calc(100% - 150px)
+
+  .event-content
+    margin: 15px 0 30px
+
+  .event-img
+    margin: 0 0 30px
+
+  .sales-section .sorting-box-filter .select
+    margin: 0 20px 0 0
+
+  .video-page
+    .sorting-wrapper
+      margin: 0 0 20px
+      flex-direction: column
+      align-items: flex-start
+      .sorting-box
+        margin: 0 0 10px
+        &:last-child
+          margin: 0
+    .form-search
+      margin: 0 0 20px
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 880px)
@@ -287,6 +328,9 @@
   .shop-page .mail-links
     margin: 0 0 0 auto
 
+  .select-type
+    max-width: 180px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px)
   .home h1
@@ -327,6 +371,51 @@
 
   .mixes-category
     font-size: 18px
+
+  .event-address
+    width: 100%
+    margin: 0 0 10px
+
+  .sales-box
+    &__img
+      width: 200px
+      margin: 0 auto 20px
+      border-radius: 5px 5px 0 0
+    &__body
+      width: 100%
+      padding: 0
+
+  .video-clip
+    flex-direction: column
+    align-items: flex-start
+    &__img
+      width: 100%
+      height: 200px
+    &__body
+      width: 100%
+      padding: 0
+
+  .gallery-box
+    &__img
+      width: 100%
+      height: 200px
+      border-radius: 5px 5px 0 0
+    &__body
+      width: 100%
+      padding: 10px
+
+  .mt-45
+    margin-top: 20px
+
+  .gallery-section .box-text
+    font-size: 16px
+
+  .pagination-nav
+    margin: 20px 0 0
+
+
+  .page-link
+    font-size: 20px
 
 @media only screen and (max-width : 480px)
   footer
@@ -445,6 +534,7 @@
   .select-city
     margin: 10px 0 0
     width: 100%
+    max-width: none
 
   .hookah-box
     &__img
@@ -463,6 +553,15 @@
     width: 80px
     height: 80px
     min-width: 80px
+
+  .event-box
+    &__img
+      width: 100%
+      height: 200px
+
+    &__body
+      width: 100%
+      padding: 10px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 360px)

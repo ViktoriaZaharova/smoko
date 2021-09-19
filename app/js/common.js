@@ -17,3 +17,5 @@ $('.menu-brands a').each(function () {
     }
 });
 // end
+
+$('.tooltip-box').tooltip();
