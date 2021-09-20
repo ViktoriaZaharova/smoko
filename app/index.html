@@ -211,6 +211,47 @@
 
 </div>
 
+<a href="#" data-target="#modalCall" data-toggle="modal" class="btn btn-accent">modal</a>
+
+<!-- Модальное окно -->
+<div class="modal fade modal-flavor" id="modalCall" tabindex="-1" aria-labelledby="modalCallLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Связаться с нами</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form-call">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <label>
+                <input type="text" placeholder="Имя" name="name">
+              </label>
+              <label>
+                <input type="text" placeholder="Телефон" name="phone">
+              </label>
+              <label>
+                <input type="text" placeholder="e-mail" name="mail">
+              </label>
+            </div>
+            <div class="col-12 col-lg-6">
+              <label>
+                <textarea name="message" placeholder="Ваше сообшение"></textarea>
+              </label>
+              <button type="submit" class="btn btn-accent">найти</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <script src="js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>

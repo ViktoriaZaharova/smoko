@@ -3260,6 +3260,9 @@ footer {
 .modal-body {
   padding: 0 18px 0 41px; }
 
+#modalCall .modal-header {
+  padding: 0 41px 41px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -3561,7 +3564,9 @@ footer {
     width: 150px; }
   .school-box .gallery-box__body {
     width: calc(100% - 150px);
-    padding: 20px; } }
+    padding: 20px; }
+  #modalCall .modal-header {
+    padding: 0 10px 10px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
