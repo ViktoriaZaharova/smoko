@@ -3867,7 +3867,13 @@ footer {
             align-items: flex-start;
     margin: 0 0 20px; }
   .result-total {
-    margin: 5px 0 0; } }
+    margin: 5px 0 0; }
+  .list-tags {
+    font-size: 10px; }
+    .list-tags li {
+      margin: 0 3px 3px 0; }
+  .flavor-page-details__img {
+    max-width: 250px; } }
 
 @media only screen and (max-width: 480px) {
   footer .application li a {
@@ -3964,6 +3970,8 @@ footer {
       margin: 0 0 10px; }
   .reviews-ava {
     margin: 0 auto; }
+  .reviews-name {
+    width: 100%; }
   .flavor-icons li {
     margin: 0 10px 5px 0; }
     .flavor-icons li:last-child {
