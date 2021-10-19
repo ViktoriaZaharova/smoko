@@ -203,6 +203,9 @@
   .header-contacts .menu
     max-width: 600px
 
+  .brand-card
+    margin: 0 0 30px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 880px)
   .menu
@@ -397,16 +400,13 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
   .home h1
-    font-size: 40px
+    font-size: 30px
 
   .home .box-text
     font-size: 16px
 
   h2, .title
     font-size: 22px
-
-  .brands-section
-    margin: 20px 0 40px
 
   .news-brand-card
     flex-direction: column
@@ -419,6 +419,13 @@
       width: 100%
       border-radius: 15px 15px 0 0
       text-align: center
+      padding: 10px 0
+
+  .date-num
+    font-size: 20px
+
+  .date-year
+    font-size: 16px
 
   .nav-pages li
     margin: 0 20px 0 0
@@ -521,6 +528,86 @@
     padding: 0
     border: none
 
+  .header
+    padding: 10px 0
+    position: absolute
+    background: transparent
+    border: none
+    .logo
+      order: 1
+      margin: 0 0 0 auto
+
+  .btn-burger__text
+    display: none
+
+  .btn-burger__icon
+    margin: 0
+
+  .home
+    padding: 120px 0 80px
+    background-position: 40% center
+    .box-text
+      padding: 0 120px 0 0
+    &:before
+      display: none
+    h1
+      color: $accent
+
+  h1
+    font-weight: 500
+    font-size: 24px
+
+  .about
+    padding: 30px 0 40px
+
+  .title
+    margin: 0 auto 0 10px
+    color: $accent
+
+  .menu-brands
+    .row
+      flex-wrap: nowrap
+      overflow-x: auto
+      padding: 0 10px 0 0
+    a
+      height: 30px
+      font-size: 14px
+
+  .nav-tabs
+    flex-wrap: nowrap
+    overflow-x: auto
+    padding: 0 10px 0 0
+
+  .brands-section
+    margin: 20px 0
+    .form-search
+      display: flex
+      width: 49%
+      input
+        font-size: 12px
+    .sorting-box
+      width: 49%
+      margin: 0 0 20px auto
+      justify-content: flex-end
+      p
+        display: none
+    .sorting-wrapper
+      .sorting-box
+        width: 100%
+
+  .sorting-wrapper
+    margin: 0 0 0 auto
+    width: 49%
+
+  .flavor-page-line
+    flex-direction: column
+    align-items: flex-start
+    margin: 0 0 20px
+
+  .result-total
+    margin: 5px 0 0
+
+
 @media only screen and (max-width: 480px)
   footer
     .application
@@ -537,6 +624,9 @@
     .brand-info-gallery__item
       width: 48%
       margin: 0 0 20px
+      display: none
+      &:nth-child(-n+2)
+        display: flex
 
   .reviews-brand-card__content
     width: 100%
@@ -718,7 +808,38 @@
   .school-page h1
     font-size: 26px
 
+  header
+    position: fixed
+    left: 0
+    top: 0
+    background: #fff
+    z-index: 3
+    width: 100%
+    border-bottom: 1px solid rgba($text, .3)
+    padding: 10px 0
+    .btn-burger
+      order: -1
+    .links-cabinet
+      display: none
+    .logo
+      order: 1
+      margin: 0 0 0 auto
+
+  .content
+    padding: 64px 0 0
+
+  .content-home
+    padding: 0
+
+
+
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 420px)
+  .home
+    background-position: 45% center
+    .box-text
+      padding: 0 70px 0 0
+
 @media only screen and (max-width: 360px)
   .logo
     max-width: 100px
@@ -729,3 +850,8 @@
       margin: 0 0 10px
       max-width: none
 
+  .content
+    padding: 50px 0 0
+
+  .content-home
+    padding: 0

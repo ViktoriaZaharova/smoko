@@ -28,6 +28,18 @@
 
 <div class="mobile-menu">
   <div class="btn-close"></div>
+  <div class="links-cabinet">
+    <div class="links-cabinet__icon svg-icon-wrap">
+      <svg class="svg-icon">
+        <use
+            xlink:href="img/sprite.svg#user"></use>
+      </svg>
+    </div>
+    <div class="links-cabinet__body">
+      <div class="links-cabinet__text">Иван Иванов</div>
+      <a href="#" class="links-edit">Выйти</a>
+    </div>
+  </div>
   <ul class="list-menu-mobile">
     <li><a href="brands.html">Бренды</a></li>
     <li><a href="flavors.html">Вкусы</a></li>
@@ -55,7 +67,6 @@
             <div class="header-wrapper">
               <a href="index.html" class="logo"><img src="img/logo-grey.svg" alt=""></a>
 
-
               <div class="title">Бренды</div>
 
               <a href="#" class="btn-burger">
@@ -73,30 +84,44 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
+            <nav aria-label="breadcrumb" class="breadcrumb-nav">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item"><a href="brands.html">Бренды</a></li>
+                <li class="breadcrumb-item"><a href="#">Daily hookah</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Галерея</li>
+              </ol>
+            </nav>
             <ul class="nav-pages">
-              <li><a href="brand.html" class="links-prev">
-                <svg class="svg-icon">
-                  <use xlink:href="img/sprite.svg#arrow-left"></use>
-                </svg>
-                назад</a></li>
               <li><span>Daily hookah</span></li>
             </ul>
           </div>
           <div class="col-12">
             <div class="menu-brands">
               <div class="row">
-                <div class="col-6 col-md-4 col-lg-2"><a href="brand.html">описание</a></div>
-                <div class="col-6 col-md-4 col-lg-2"><a href="news-brand.html">новости</a></div>
-                <div class="col-6 col-md-4 col-lg-2"><a href="gallery-brand.html">галерея</a></div>
-                <div class="col-6 col-md-4 col-lg-2"><a href="video-brand.html">видео</a></div>
-                <div class="col-6 col-md-4 col-lg-2"><a href="reviews-brand.html">отзывы</a></div>
-                <div class="col-6 col-md-4 col-lg-2"><a href="contact-brand.html">контакты</a></div>
+                <div class="col-4 col-md-4 col-lg-2"><a href="brand.html">описание</a></div>
+                <div class="col-4 col-md-4 col-lg-2"><a href="news-brand.html">новости</a></div>
+                <div class="col-4 col-md-4 col-lg-2"><a href="gallery-brand.html">галерея</a></div>
+                <div class="col-4 col-md-4 col-lg-2"><a href="video-brand.html">видео</a></div>
+                <div class="col-4 col-md-4 col-lg-2"><a href="reviews-brand.html">отзывы</a></div>
+                <div class="col-4 col-md-4 col-lg-2"><a href="contact-brand.html">контакты</a></div>
               </div>
             </div>
           </div>
         </div>
 
         <div class="row">
+          <div class="col-12 d-block d-sm-none">
+            <div class="brand-card-img"><img src="img/brand4.png" alt=""></div>
+            <div class="rating-brand">
+              <a href="#" class="rating-brand__links svg-icon-wrap">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#heart"></use>
+                </svg>
+              </a>
+              <div class="rating-brand__val">3260 понравилось</div>
+            </div>
+          </div>
           <div class="col-12 col-lg-9">
             <div class="gallery-brand-card">
               <div class="row">
@@ -196,7 +221,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-3">
+          <div class="col-12 col-lg-3 d-none d-sm-block">
             <div class="brand-card">
               <div class="brand-card-img"><img src="img/brand4.png" alt=""></div>
               <div class="box-text">

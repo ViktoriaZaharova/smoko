@@ -3,7 +3,7 @@ $('.btn-burger').on('click', function (e) {
     $('.mobile-menu').fadeToggle();
 });
 
-$('.btn-close').on('click', function (e) {
+$('.btn-close, .links-edit').on('click', function (e) {
     e.preventDefault();
     $('.mobile-menu').fadeOut();
 });
