@@ -57,7 +57,7 @@
     width: 100%
 
   .select-type
-    max-width: 150px
+    max-width: 160px
 
   .event-address
     margin: 0 auto 0 0
@@ -188,6 +188,7 @@
   .form-call
     label
       margin: 0 0 20px
+
       &:last-child
         margin: 0 0 20px
 
@@ -197,6 +198,7 @@
 
   .contacts-page
     padding: 30px 0 60px
+
     .list-social
       margin: 0 0 30px
 
@@ -205,6 +207,52 @@
 
   .brand-card
     margin: 0 0 30px
+
+  .shop-card .list-social
+    li
+      margin: 0 10px 0 0
+    .vk-links
+      width: 34px
+      height: 22px
+    .inst-links
+      width: 24px
+      height: 26px
+    .telegram-links
+      width: 28px
+      height: 22px
+    .youtube-links
+      width: 26px
+      height: 26px
+    .fb-links
+      width: 24px
+      height: 20px
+
+  .hookah-card
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    position: relative
+    &__img
+      margin: 0
+      position: absolute
+      right: 0
+      top: 0
+    .mail-links
+      width: 100%
+      margin: 10px 0 0
+    .btn
+      margin: 0 10px 0 0
+    .rating-brand
+      order: 1
+      margin: 20px 0 0
+      width: 100%
+    .list-social
+      width: 100%
+      margin: 0 0 10px
+
+  .nav-pages
+    margin: 20px 0
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 880px)
@@ -234,6 +282,8 @@
   .header-contacts .btn-burger
     display: flex
     margin: 0 0 0 auto
+
+
 
 @media only screen and (max-width: 768px)
   .home h1
@@ -400,6 +450,14 @@
   .gallery-banner-mix
     height: 300px
 
+  .events-section
+    .sorting-box
+      margin: 0 0 10px
+      p
+        display: none
+    .select-city, .form-search
+      max-width: none
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
   .home h1
@@ -453,14 +511,37 @@
     margin: 0 0 10px
 
   .sales-box
+    position: relative
     &__img
-      width: 200px
+      width: 100%
       margin: 0 auto 20px
       border-radius: 5px 5px 0 0
 
     &__body
       width: 100%
       padding: 0
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+    h3
+      font-weight: 500
+    .links-favorite
+      position: absolute
+      right: 0
+      bottom: 10px
+    .btn
+      order: 1
+    &__footer
+      margin: 0 0 10px
+    .logo-company
+      width: 30px
+      height: 30px
+    &__top
+      min-height: auto
+      margin: 0 0 10px
+    h4
+      margin: 0 0 10px
+
 
   .video-clip
     flex-direction: column
@@ -536,6 +617,7 @@
     position: absolute
     background: transparent
     border: none
+
     .logo
       order: 1
       margin: 0 0 0 auto
@@ -549,10 +631,13 @@
   .home
     padding: 120px 0 80px
     background-position: 40% center
+
     .box-text
       padding: 0 120px 0 0
+
     &:before
       display: none
+
     h1
       color: $accent
 
@@ -572,6 +657,7 @@
       flex-wrap: nowrap
       overflow-x: auto
       padding: 0 10px 0 0
+
     a
       height: 30px
       font-size: 14px
@@ -583,17 +669,22 @@
 
   .brands-section
     margin: 20px 0
+
     .form-search
       display: flex
       width: 49%
+
       input
         font-size: 12px
+
     .sorting-box
       width: 49%
       margin: 0 0 20px auto
       justify-content: flex-end
+
       p
         display: none
+
     .sorting-wrapper
       .sorting-box
         width: 100%
@@ -612,6 +703,7 @@
 
   .list-tags
     font-size: 10px
+
     li
       margin: 0 3px 3px 0
 
@@ -625,19 +717,118 @@
   .mix-page-details
     .mix-box__footer
       margin: 20px 0
+
     .flavor-page-details__img
       max-width: 290px
       margin: 0 auto 10px
 
   .hookah-section
     .sorting-box
-      margin: 0 0 15px
+      margin: 0 0 10px
       justify-content: flex-start
+
     .location-box
       width: 100%
       max-width: none
+
       select
         max-width: none
+
+  .events-section .form-search
+    width: 100%
+    max-width: none
+    input
+      font-size: 14px
+
+  .event-box .box-text
+    margin: 5px 0
+
+
+  .shop-card__it
+    order: -1
+    padding: 0
+
+    h3
+      text-transform: none
+      color: $accent
+      font-weight: 500
+
+      .svg-icon
+        display: none
+
+
+  .shop-card__img
+    margin: 0 0 0 auto
+    width: 100px
+    height: 100px
+
+  .shop-card__it-last
+    order: 1
+    border: none
+    margin: 10px 0 15px
+
+  .shop-card
+    align-items: flex-start
+
+    .btn-group
+      order: 1
+      width: 100%
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+
+      .btn
+        width: 100%
+        max-width: 49%
+        margin: 0 0 10px
+        font-size: 16px
+
+    .rating-brand
+      width: 100%
+      order: 1
+      margin: 15px 0 0
+
+    .list-social
+      margin: 0
+
+    .phones
+      color: $text
+      margin: 0 0 10px
+
+    .mail-links
+      margin: 0 0 5px
+
+  .shop-page
+    .nav-pages
+      margin: 0 0 10px
+
+  .schedule-box
+    margin: 10px 0 0
+    p
+      display: block
+      margin: 0 0 5px
+
+  .event-img
+    margin: 0 0 20px
+
+  .event-content h3
+    margin: 10px 0 20px
+
+  .nav-tab__icon
+    width: 20px
+    min-width: 20px
+    height: 20px
+    margin: 0 10px 0 0
+
+  .video-page .nav-tabs-my
+    margin: 0
+
+  .video-page .flavors-wrapper
+    margin: 0
+
+  .video-box__preview
+    height: 150px
 
 @media only screen and (max-width: 480px)
   footer
@@ -656,6 +847,7 @@
       width: 48%
       margin: 0 0 20px
       display: none
+
       &:nth-child(-n+2)
         display: flex
 
@@ -779,6 +971,10 @@
     width: 100%
     max-width: none
 
+  .events-section
+    .select-city
+      margin: 0
+
   .hookah-box
     &__img
       width: 80px
@@ -823,14 +1019,16 @@
 
   .reviews-brand-card
     padding: 20px
-    
+
   .comments-rating-box
     .reviews-name
       text-align: left
       padding: 0
+
     .reviews-id
       margin: 0
       text-align: left
+
     .reviews-brand-card__content
       margin: 10px 0 0
       padding: 0
@@ -840,6 +1038,7 @@
       width: 50%
       order: -1
       margin: 0 0 10px
+
     .btn
       margin: 0 auto
 
@@ -855,10 +1054,13 @@
     width: 100%
     border-bottom: 1px solid rgba($text, .3)
     padding: 10px 0
+
     .btn-burger
       order: -1
+
     .links-cabinet
       display: none
+
     .logo
       order: 1
       margin: 0 0 0 auto
@@ -872,12 +1074,28 @@
   .subcategory
     font-size: 18px
 
+  .hookah-card__img
+    width: 100px
+    height: 100px
 
+  .hookah-card .btn
+    font-size: 16px
+    max-width: 48%
+
+  .hookah-card-info__icon
+    display: none
+
+  .hookah-card-info
+    font-size: 16px
+
+  .hookah-card-info__address
+    color: $accent
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
   .home
     background-position: 45% center
+
     .box-text
       padding: 0 70px 0 0
 
@@ -902,3 +1120,6 @@
 
   h2, .title
     font-size: 20px
+
+  .video-box__preview
+    height: 120px
