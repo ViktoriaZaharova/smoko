@@ -253,6 +253,8 @@
   .nav-pages
     margin: 20px 0
 
+  .application li a
+    margin: 0 auto
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 880px)
@@ -662,6 +664,24 @@
 
   .about
     padding: 30px 0 40px
+    .social p
+      display: none
+    .list-social
+      max-width: 180px
+      width: 100%
+      margin: 10px auto 0
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+      li
+        margin: 0
+    .tab-content
+      margin: 20px 0
+    h2
+      margin: 0 auto 10px
+
+  .application li
+    margin: 0 auto 10px
 
   .title
     margin: 0 auto 0 10px
@@ -874,6 +894,13 @@
 
 
 @media only screen and (max-width: 480px)
+  .home
+    padding: 70px 0 40px
+
+  .header
+    .btn-burger
+      margin: 0 0 0 10px
+
   footer
     .application
       li
@@ -882,6 +909,12 @@
 
   h3
     font-size: 16px
+
+  .about
+    padding: 10px 0 40px
+    h2
+      margin: 0 auto 10px
+
 
   .gallery-brand-card .brand-info-gallery
     justify-content: space-between
@@ -1140,9 +1173,12 @@
     background-position: 45% center
 
     .box-text
-      padding: 0 70px 0 0
+      padding: 0 30px 0 0
 
 @media only screen and (max-width: 360px)
+  .header .btn-burger
+    margin: 0
+
   .logo
     max-width: 100px
 

@@ -152,6 +152,33 @@ label
     background: #D0F2EC
     color: $text
 
+.btn-dropdown
+  color: #fff
+  width: 100%
+  max-width: 400px
+  margin: 0 auto
+  font-size: 14px
+  display: flex
+  flex-direction: row-reverse
+  &:after
+    margin: 0 10px 0 0
+  .btn-icon
+    width: 20px
+    height: 20px
+    fill: #fff
+
+.dropdown-menu
+  width: 100%
+  max-width: 400px
+  padding: 0
+
+
+
+.dropdown-tabs-nav
+  width: 100%
+  .dropdown-item.active, .dropdown-item:active
+    background: transparent
+    color: #000
 
 .wrapper
   display: flex
@@ -328,6 +355,31 @@ a.color-accent
 
 .font-bold
   font-weight: bold
+
+.home-information
+  padding: 20px 0
+  background: $accent
+  color: #fff
+
+.home-information-box
+  margin: 0 0 20px
+  width: 100%
+  &:last-child
+    margin: 0
+  h3
+    text-transform: uppercase
+    text-decoration: underline
+    margin: 0 0 10px
+
+.list-meu
+  li
+    margin: 0 0 3px
+    &:last-child
+      margin: 0
+    a
+      color: #fff
+      &:hover
+        color: #000
 
 //about
 .about
