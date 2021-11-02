@@ -85,7 +85,7 @@ body {
   line-height: normal;
   font-family: "gotham", sans-serif;
   font-weight: normal;
-  color: #464646;
+  color: rgba(70, 70, 70, 0.6);
   background: #fff; }
 
 html, body {
@@ -177,7 +177,7 @@ label {
   height: 40px; }
   .btn-accent:hover {
     background: #D0F2EC;
-    color: #464646; }
+    color: rgba(70, 70, 70, 0.6); }
 
 .btn-dropdown {
   color: #fff;
@@ -390,7 +390,7 @@ a.color-accent:hover {
           -ms-flex-pack: center;
               justify-content: center; }
       .list-social li a:hover {
-        fill: #464646; }
+        fill: rgba(70, 70, 70, 0.6); }
     .list-social li .no-active {
       fill: #E5E5E5;
       pointer-events: none; }
@@ -454,7 +454,7 @@ a.color-accent:hover {
     background: #C3F5EC;
     border: none;
       border-radius: 5px;
-    color: #464646;
+    color: rgba(70, 70, 70, 0.6);
     font-size: 14px;
     font-family: "gotham", sans-serif;
     text-align: center;
@@ -577,7 +577,7 @@ a.color-accent:hover {
 
 .menu-brands a {
   margin: 0 0 38px;
-  color: #464646;
+  color: rgba(70, 70, 70, 0.6);
   background: #D0F2EC;
   border-radius: 5px;
   width: 100%;
@@ -709,7 +709,7 @@ a.color-accent:hover {
 .links-accent {
   color: #5FA598; }
   .links-accent:hover {
-    color: #464646; }
+    color: rgba(70, 70, 70, 0.6); }
 
 .brand-info-box {
   margin: 0 0 44px; }
@@ -1384,7 +1384,7 @@ a.color-accent:hover {
           box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 30px;
-  color: #464646;
+  color: rgba(70, 70, 70, 0.6);
   font-size: 18px; }
   .flavors-box:hover {
     color: #5FA598; }
@@ -1596,7 +1596,7 @@ a.color-accent:hover {
 
 .flavor-rating .total-rating-brand__val {
   font-size: 24px;
-  color: #464646; }
+  color: rgba(70, 70, 70, 0.6); }
 
 .flavor-rating .details-rating {
   -webkit-column-count: 2;
@@ -2196,7 +2196,7 @@ a.color-accent:hover {
       width: 17px;
       height: 22px;
       min-width: 17px;
-      fill: #464646; }
+      fill: rgba(70, 70, 70, 0.6); }
   .shop-card .list-social {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2896,7 +2896,7 @@ a.color-accent:hover {
         flex-wrap: wrap; }
   .comments-rating h3 {
     text-transform: none;
-    color: #464646; }
+    color: rgba(70, 70, 70, 0.6); }
   .comments-rating .sorting-box {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -3102,7 +3102,7 @@ a.color-accent:hover {
   margin: 0 0 0 auto; }
   .toggle-views-card p {
     font-size: 12px;
-    color: #464646;
+    color: rgba(70, 70, 70, 0.6);
     margin: 0 0 5px; }
 
 .label-toggle {
@@ -3113,7 +3113,7 @@ a.color-accent:hover {
 .toggle-input {
   width: 100%;
   height: 100%;
-  border: 1px solid #464646;
+  border: 1px solid rgba(70, 70, 70, 0.6);
     border-radius: 3px; }
   .toggle-input:checked ~ .toggle-input-custom {
     right: auto;
@@ -3251,7 +3251,7 @@ header {
       border-radius: 5px; }
       .menu li a:hover {
         background: #C3F5EC;
-        color: #464646; }
+        color: rgba(70, 70, 70, 0.6); }
 
 .links-cabinet {
   display: -webkit-box;
@@ -3282,7 +3282,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #464646;
+  color: rgba(70, 70, 70, 0.6);
   font-size: 14px; }
   .btn-burger:hover {
     color: #5FA598; }
@@ -4039,7 +4039,8 @@ footer {
     margin: 0 auto 10px; }
   .title {
     margin: 0 auto 0 10px;
-    color: #5FA598; }
+    color: #5FA598;
+    font-weight: normal; }
   .menu-brands .row {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -4061,7 +4062,11 @@ footer {
       display: flex;
       width: 49%; }
       .brands-section .form-search input {
-        font-size: 12px; }
+        font-size: 12px;
+        background: rgba(70, 70, 70, 0.1);
+        border: 1px solid rgba(70, 70, 70, 0.2); }
+      .brands-section .form-search button {
+        background: rgba(70, 70, 70, 0.6); }
     .brands-section .sorting-box {
       width: 49%;
       margin: 0 0 20px auto;
@@ -4072,6 +4077,32 @@ footer {
         display: none; }
     .brands-section .sorting-wrapper .sorting-box {
       width: 100%; }
+    .brands-section .rating-brand {
+      margin: 0 0 0 auto;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+  .brand-info-box {
+    margin: 0 0 30px; }
+    .brand-info-box h3 {
+      margin: 0 0 20px; }
+  .brand-box, .brand-card-img {
+    -webkit-box-shadow: 0 1px 14px rgba(0, 0, 0, 0.27);
+            box-shadow: 0 1px 14px rgba(0, 0, 0, 0.27); }
+  .news-brand-card-date {
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 0 10px; }
+  .news-brand-card {
+    margin: 0 0 20px; }
+    .news-brand-card .box-text {
+      line-height: 1.3;
+      margin: 10px 0;
+      font-size: 14px; }
+  .news-brand-card__footer .btn {
+    margin: 10px 0 0; }
+  .btn-accent {
+    height: 30px; }
   .sorting-wrapper {
     margin: 0 0 0 auto;
     width: 49%; }
@@ -4176,7 +4207,7 @@ footer {
     .shop-card .list-social {
       margin: 0; }
     .shop-card .phones {
-      color: #464646;
+      color: rgba(70, 70, 70, 0.6);
       margin: 0 0 10px; }
     .shop-card .mail-links {
       margin: 0 0 5px; }
@@ -4220,12 +4251,30 @@ footer {
         -ms-flex-pack: start;
             justify-content: flex-start; }
   .box-text {
-    line-height: normal; }
+    line-height: 1.3; }
+    .box-text p {
+      margin: 0 0 15px; }
   .tooltip-box {
     top: 10px;
-    right: 10px; } }
+    right: 10px; }
+  .nav-tabs-my {
+    margin: 0 -5px; }
+    .nav-tabs-my .nav-item {
+      margin: 0 0 10px;
+      width: 200px;
+      -webkit-box-flex: 0;
+          -ms-flex: none;
+              flex: none;
+      max-width: none;
+      padding: 0 5px; }
+    .nav-tabs-my .nav-link {
+      font-size: 16px;
+      height: 30px;
+      font-weight: 500; } }
 
 @media only screen and (max-width: 480px) {
+  .nav-tabs-my .nav-item {
+    width: 160px; }
   .home {
     padding: 70px 0 40px; }
   .header .btn-burger {
