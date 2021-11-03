@@ -81,10 +81,10 @@
       </div>
     </header>
 
-    <div class="brands-section">
+    <div class="brands-section flavors-page">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-12 col-lg-8">
+          <div class="col-12 col-lg-8 d-none d-sm-block">
             <nav class="tabs-navigation">
               <ul class="nav nav-tabs nav-tabs-my row" id="nav-tab" role="tablist">
                 <li class="nav-item col-6 col-md-3 mb-20" role="presentation">
@@ -106,7 +106,27 @@
               </ul>
             </nav>
           </div>
-          <div class="col-12 col-lg-4 d-flex align-items flex-wrap">
+
+          <div class="col-6 d-block d-sm-none mb-20">
+            <div class="dropdown dropdown-tabs-nav">
+              <a href="#" class="btn btn-accent dropdown-toggle btn-dropdown" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">
+                все смеси
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#nav-1" data-toggle="tab" role="tab"
+                   aria-controls="nav-home" aria-selected="false">все смеси</a>
+                <a class="dropdown-item" href="#nav-2" data-toggle="tab" role="tab"
+                   aria-controls="nav-profile" aria-selected="false">табачные</a>
+                <a class="dropdown-item" href="#nav-3" data-toggle="tab" role="tab"
+                   aria-controls="nav-profile" aria-selected="false">чайные</a>
+                <a class="dropdown-item" href="#nav-4" data-toggle="tab" role="tab"
+                   aria-controls="nav-profile" aria-selected="false">другие</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 d-block d-sm-none mb-20">
             <form method="post" class="form-search">
               <label><input type="text" placeholder="Поиск по разделу"></label>
               <button type="submit">
@@ -115,6 +135,10 @@
                 </svg>
               </button>
             </form>
+          </div>
+
+          <div class="col-12 col-lg-4 d-flex align-items flex-wrap">
+
             <div class="sorting-box">
               <p>сортировать по:</p>
               <select name="select" class="select">

@@ -111,7 +111,7 @@
     margin: 0 auto 30px
 
   .mixes-section .sorting-box
-    margin: 0 0 20px
+    margin: 0 0 20px auto
 
   .form-search
     margin: 0 0 20px auto
@@ -476,6 +476,8 @@
   .mt-45
     margin-top: 10px
 
+  .rating-page .sorting-box
+    margin: 0 10px 0 auto
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -529,11 +531,16 @@
     width: 100%
     margin: 0 0 10px
 
+  .sales-section
+    .mb-35
+      margin-bottom: 20px
+
   .sales-box
     position: relative
+    padding: 13px
     &__img
       width: 100%
-      margin: 0 auto 20px
+      margin: 0 auto 10px
       border-radius: 5px 5px 0 0
 
     &__body
@@ -551,15 +558,16 @@
     .btn
       order: 1
     &__footer
-      margin: 0 0 10px
+      margin: 0 0 5px
     .logo-company
-      width: 30px
-      height: 30px
+      width: 32px
+      height: 32px
     &__top
       min-height: auto
       margin: 0 0 10px
     h4
-      margin: 0 0 10px
+      margin: 0 0 5px
+      font-size: 17px
 
 
   .video-clip
@@ -585,8 +593,16 @@
       padding: 10px
 
 
-  .gallery-section .box-text
-    font-size: 16px
+  .gallery-section
+    h1
+      margin: 0 0 10px
+    .box-text
+      font-size: 15px
+      line-height: 1.3
+      margin: 0 0 10px
+    .date
+      font-size: 14px
+      color: $accent
 
   .pagination-nav
     margin: 20px 0 0
@@ -608,21 +624,54 @@
   .list-number
     font-size: 16px
 
-  .school-page h1
-    font-size: 34px
+  .school-page
+    h1
+      font-size: 34px
+      margin: 0 0 20px
+      max-width: 300px
+    .form-search
+      background: $text
+      border-radius: 10px
+      border: 1px solid $accent
+      input
+        color: #fff
+        &::placeholder
+          color: #fff
 
-  .school-box .gallery-box__img
-    width: 100%
-    height: 200px
-    border-radius: 5px 5px 0 0
-    margin: 0 auto
 
-  .school-box .gallery-box__body
-    width: 100%
-    padding: 20px
+  .school-box
+    box-shadow: 0 0 30px rgba(#000, .4)
+    .gallery-box__img
+      width: 100%
+      height: 200px
+      border-radius: 5px 5px 0 0
+      margin: 0 auto
+    .gallery-box__body
+      width: 100%
+      padding: 20px
+    .gallery-box__footer
+      margin: 10px 0 0
+      position: relative
+      justify-content: flex-start
+      flex-direction: column
+      align-items: flex-start
+      .date
+        text-align: left
+        margin: 0
+        span
+          display: none
+        br
+          display: none
+      .btn
+        position: absolute
+        right: 0
+        top: 0
+      .gallery-box-time
+        color: rgba($text, .4)
+        order: 1
+        margin: 3px 0 0
 
-  .school-box .gallery-box__footer
-    margin: 10px 0 0
+
 
   .contacts-page-app
     margin: 30px 0 0
@@ -765,19 +814,64 @@
   .flavor-page-line
     flex-direction: column
     align-items: flex-start
-    margin: 0 0 20px
+    margin: 0 0 10px
+    h3
+      font-size: 14px
+
+  .dropdown-category
+    width: calc(100% - 100px)
+    .btn
+      padding: 7px 10px
+      justify-content: flex-start
+      font-size: 13px
+
+  .mb-10
+    margin-bottom: 10px
+
+  .flavor-page
+    h1
+      margin: 20px 0 5px
+    .mb-39
+      margin-bottom: 20px
+
+  .flavor-card__cat
+    margin: 5px 0 10px
 
   .result-total
     margin: 5px 0 0
+    font-size: 12px
 
   .list-tags
-    font-size: 10px
-
+    font-size: 12px
+    margin: 0 0 10px
     li
       margin: 0 3px 3px 0
 
   .flavor-page-details__img
     max-width: 250px
+    margin: 0 auto 15px
+
+  .flavor-rating
+    margin: 15px 0 0
+    .btn-group
+      .btn
+        &:first-child
+          display: none
+    .details-rating-row
+      margin: 0 0 10px
+
+  .flavor-page-details
+    .description-flavor
+      margin: 0 0 20px
+      h4
+        margin: 0 0 10px
+    .overall-assessment__item
+      max-width: 110px
+      width: 100%
+      padding: 5px 10px
+      margin: 0 15px 0 0
+      &:nth-last-child(1)
+        margin: 0
 
   .mix-page .sorting-box
     margin: 0 0 20px
@@ -785,11 +879,51 @@
 
   .mix-page-details
     .mix-box__footer
-      margin: 20px 0
-
+      margin: 10px 0
+    .rating-brand
+      margin: 0 auto 0 0
     .flavor-page-details__img
-      max-width: 290px
+      max-width: none
+      width: 100%
+      height: auto
+      max-height: none
+      padding-bottom: 62.5%
+      position: relative
       margin: 0 auto 10px
+      overflow: hidden
+      img
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translate(0,-50%)
+
+    .description-flavor .box-text
+      margin: 0 0 20px
+      font-size: 14px
+
+  .grade-mix
+    border-radius: 10px
+    background: rgba($text, .2)
+    padding: 5px
+    color: $text
+    font-size: 16px
+    font-weight: bold
+    text-transform: uppercase
+    span
+      display: block
+      font-weight: normal
+    &__val
+      background: $text
+      color: #fff
+      width: 40px
+      height: 40px
+      min-width: 40px
+      margin: 0 10px 0 0
+      font-size: 16px
+      line-height: normal
+      border: none
+        radius: 50%
+
 
   .hookah-section
     .sorting-box
@@ -821,24 +955,25 @@
       text-transform: none
       color: $accent
       font-weight: 500
+      margin: 0 0 10px
 
       .svg-icon
         display: none
 
 
   .shop-card__img
-    margin: 0 0 0 auto
-    width: 100px
-    height: 100px
+    margin: -20px 0 0 auto
+    width: 150px
+    height: 150px
 
   .shop-card__it-last
     order: 1
     border: none
-    margin: 10px 0 15px
+    margin: 5px 0 10px
 
   .shop-card
     align-items: flex-start
-
+    margin: 0 0 20px
     .btn-group
       order: 1
       width: 100%
@@ -856,7 +991,8 @@
     .rating-brand
       width: 100%
       order: 1
-      margin: 15px 0 0
+      margin: 10px 0 0
+      justify-content: flex-start
 
     .list-social
       margin: 0
@@ -868,9 +1004,30 @@
     .mail-links
       margin: 0 0 5px
 
+  .hookah-page-content
+    h3
+      margin: 0 0 15px
+    .box-text
+      margin: 0 0 20px
+      font-size: 14px
+
+  .shop-photo, .hookah-photo, .gallery-photo, .gallery-banner-mix, .video-clip__img
+    height: auto
+    overflow: hidden
+    position: relative
+    width: 100%
+    padding-bottom: 62.5%
+    img
+      position: absolute
+      left: 0
+      top: 0
+
+  .video-clip h3
+    margin: 0 0 5px
+
   .shop-page
     .nav-pages
-      margin: 0 0 10px
+      margin: 0 0 5px
 
   .schedule-box
     margin: 10px 0 0
@@ -897,7 +1054,19 @@
     margin: 0
 
   .video-box__preview
-    height: 150px
+    //height: 150px
+    position: relative
+    padding-bottom: 56.25%
+    height: 0
+    padding-top: 25px
+    iframe, img
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+    //img
+    //  object-fit: none
 
   .video-box__settings
     width: 25px
@@ -906,17 +1075,9 @@
   .video-box__name
     width: calc(100% - 25px)
 
-  .video-box
-    padding: 10px
-    border-radius: 10px
-    box-shadow: 0 10px 30px rgba(#000, .1)
-
-  .video-page
-    .form-search
-      width: 100%
-    .sorting-box
-      margin: 0 0 20px
-      justify-content: flex-start
+  .gallery-brand
+    .mb-35
+      margin-bottom: 15px
 
   .box-text
     line-height: 1.3
@@ -929,6 +1090,7 @@
 
   .nav-tabs-my
     margin: 0 -5px
+    justify-content: flex-start
     .nav-item
       margin: 0 0 10px
       width: 200px
@@ -939,6 +1101,189 @@
       font-size: 16px
       height: 30px
       font-weight: 500
+
+  .mixes-section
+    .nav-tabs-my
+      margin: 0 -5px
+      padding: 0
+      .nav-item
+        margin: 0 0 10px
+        width: 200px
+        flex: none
+        max-width: none
+        padding: 0 5px
+      .nav-link
+        font-size: 16px
+        height: 30px
+        font-weight: 500
+    .form-search
+      width: 100%
+      margin: 0
+    .sorting-box
+      margin: 0 0 0 auto
+      width: 100%
+      justify-content: flex-end
+    .rating-brand
+      margin: 0 auto 0 0
+
+  .mb-24
+    margin-bottom: 15px
+
+  .gallery-brand-card
+    padding: 15px
+    margin: 0 0 10px
+    h3
+      margin: 0 0 10px
+
+  .gallery-brand-card .brand-info-gallery
+    margin: 10px 0
+
+  .brand-card-img
+    margin: 0 0 15px
+
+  .details-rating-row
+    margin: 0 0 10px
+
+  .total-rating-brand
+    margin: 0 0 15px
+
+  .sorting-reviews-brand
+    margin: 20px 0 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    p
+      display: none
+    .checkbox
+      margin: 0 0 5px
+
+  .sorting-reviews-brand__group
+    display: flex
+    flex-direction: column-reverse
+  .select-sorting
+    background-position: left center
+    padding: 0 0 0 20px
+
+  .reviews-brand-card
+    margin: 20px 0 15px
+
+  .brand-card
+    margin: 0 0 20px
+    .box-text
+      max-width: 80%
+      margin: 0 0 15px
+
+  .contact-brand
+    h3
+      margin: 0 0 15px
+    .schedule
+      margin: 10px 0
+    .btn-group
+      flex-direction: column
+      align-items: flex-start
+      .btn
+        margin: 0 0 10px
+
+  .flavors-page
+    .form-search
+      margin: 0
+      width: 100%
+    .sorting-box
+      margin: 0 0 15px
+      justify-content: flex-start
+    .select
+      padding: 0 0 0 20px
+      background-position: left center
+
+  .flavor-card__img
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.3))
+
+  .nav-pages
+    margin: 0 0 5px
+
+  .hookah-card-info
+    font-size: 15px
+    margin: 0 0 10px
+
+  .hookah-card__img
+    top: -25px
+    width: 150px
+    height: 150px
+
+  .hookah-card
+    .rating-brand
+      margin: 10px 0 0
+      justify-content: flex-start
+
+  .events-section
+    .sorting-box
+      justify-content: flex-start
+
+  .rating-page .sorting-box
+    margin: 5px 0
+
+  .links-shop
+    margin: 0
+
+  .video-box
+    padding: 10px
+    border-radius: 10px
+    box-shadow: 0 10px 30px rgba(#000, .1)
+    &__body
+      padding: 10px 0 0 50px
+    &__category
+      color: $accent
+    &__date
+      color: rgba($text, .5)
+
+  .video-page
+    .form-search
+      width: 100%
+    .sorting-box
+      margin: 0
+      justify-content: flex-start
+    .video-box
+      &__body
+        padding-left: 0
+
+  .video-box__name
+    font-size: 19px
+
+  .rating-box h3
+    margin: 0 0 10px
+
+  .rating-page .date
+    font-size: 14px
+
+  .rating-page h1
+    margin: 0 0 10px
+
+  .rating-page-img p
+    margin: 10px auto 0
+
+  .rating-page .box-text
+    margin: 10px 0
+
+  .comments-rating__head
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    h3
+      margin: 0 0 5px
+      width: 100%
+    .sorting-box
+      width: fit-content
+      margin: 0 0 0 auto
+      order: 1
+
+  .comments-rating
+    margin: 30px 0 0
+
+  .rating-page-box h4
+    margin: 0 0 15px
+
+  .rating-page-img
+    margin: 0 0 20px
 
 @media only screen and (max-width: 480px)
   .nav-tabs-my
@@ -969,11 +1314,13 @@
 
   .gallery-brand-card .brand-info-gallery
     justify-content: space-between
+    margin: 10px 0 0
 
     .brand-info-gallery__item
       width: 48%
-      margin: 0 0 20px
+      margin: 0 0 10px
       display: none
+      height: 90px
 
       &:nth-child(-n+2)
         display: flex
@@ -988,25 +1335,48 @@
     align-items: center
     flex-wrap: wrap
     width: 100%
+    padding: 0 0 0 50px
+    position: relative
+
+  .reviews-ava
+    display: none
 
   .reviews-grade
-    margin: 20px 0 0
-    width: 100%
+    margin: 0
+    width: 40px
+    height: 40px
+    position: absolute
+    left: 0
+    top: 0
 
   .reviews-grade__rating
     justify-content: center
+    display: none
+
+  .reviews-grade__val
+    margin: 0
+    width: 100%
+    height: 100%
 
   .reviews-name
-    padding: 0 10px
-    text-align: center
+    padding: 0
+    margin: 0
+    color: $text
+    width: 100%
 
   .reviews-id
-    margin: 10px 0 0
-    text-align: center
+    display: none
+
+  .reviews-date
+    display: block
+    font-size: 12px
 
   .reviews-brand-card
     .btn
       max-width: 140px
+    &__footer
+      margin: 15px 0 0
+
 
   .sorting-wrapper
     flex-direction: column
@@ -1020,11 +1390,11 @@
     align-items: flex-start
 
     &__img
-      margin: 0 auto
+      margin: 0 auto 20px
 
     &__body
       padding: 0
-      margin: 20px 0 0
+      margin: 0
       width: 100%
 
     .btn
@@ -1049,11 +1419,6 @@
     .btn
       margin: 0 0 10px
 
-  .reviews-ava
-    margin: 0 auto
-
-  .reviews-name
-    width: 100%
 
   .flavor-icons li
     margin: 0 10px 5px 0
@@ -1061,14 +1426,48 @@
     &:last-child
       margin: 0 0 5px
 
+
+
   .flavor-page-details
+    .flavor-card-reviews
+      padding: 20px
+      margin: 0 0 20px
+      position: relative
     .reviews-brand-card__content
       width: 100%
       padding: 0
       margin: 0
 
+
     .reviews-brand-card__col
-      margin: 0 auto
+      margin: 0
+      position: absolute
+      left: 20px
+      top: 20px
+      width: 50px
+      height: 50px
+      padding: 0
+    .reviews-brand-card__top
+      padding: 0 0 0 50px
+      min-height: 40px
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      justify-content: center
+    .reviews-date
+      margin: 5px 0 0
+
+  .reviews-brand-card .box-text
+    line-height: 1.3
+
+  .flavor-page-details .sorting-wrapper
+    margin: 10px 0 0
+    .sorting-box
+      margin: 0 0 20px
+      justify-content: flex-start
+      .select
+        background-position: left  center
+        padding: 0 0 0 20px
 
   .mixes-category
     height: 140px
@@ -1113,14 +1512,15 @@
     .address
       font-size: 14px
 
-  .shop-page .mail-links
-    width: 100%
-    margin: 0 0 10px
+  .shop-page, .hookah-page
+    .mail-links
+      width: 100%
+      margin: 0 0 5px
 
   .shop-card__img
-    width: 80px
-    height: 80px
-    min-width: 80px
+    width: 120px
+    height: 120px
+    min-width: 120px
 
   .event-box
     &__img
@@ -1151,23 +1551,23 @@
     .reviews-name
       text-align: left
       padding: 0
-
+    .reviews-ava
+      display: flex
+    .reviews-brand-card__col
+      padding: 0
     .reviews-id
       margin: 0
       text-align: left
-
+      display: block
     .reviews-brand-card__content
       margin: 10px 0 0
       padding: 0
 
   .school-box .gallery-box__footer
-    .date
-      width: 50%
-      order: -1
-      margin: 0 0 10px
 
     .btn
       margin: 0 auto
+      max-width: 140px
 
   .school-page h1
     font-size: 26px
@@ -1199,11 +1599,12 @@
     padding: 0
 
   .subcategory
-    font-size: 18px
+    font-size: 15px
+    margin: 0 0 10px
 
   .hookah-card__img
-    width: 100px
-    height: 100px
+    width: 120px
+    height: 120px
 
   .hookah-card .btn
     font-size: 16px
@@ -1217,6 +1618,13 @@
 
   .hookah-card-info__address
     color: $accent
+
+  .logo-pc
+    display: none
+
+  .logo-mobile
+    display: block
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
@@ -1244,9 +1652,6 @@
 
   .content-home
     padding: 0
-
-  .gallery-banner-mix
-    height: 250px
 
   h2, .title
     font-size: 20px

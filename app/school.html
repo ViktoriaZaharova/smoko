@@ -65,7 +65,9 @@
         <div class="row">
           <div class="col-12">
             <div class="header-wrapper">
-              <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+              <a href="index.html" class="logo">
+                <img src="img/logo-grey.svg" alt="" class="logo-mobile">
+                <img src="img/logo.svg" class="logo-pc" alt=""></a>
               <div class="title">Школа</div>
 
               <a href="#" class="btn-burger">
@@ -82,7 +84,7 @@
     <div class="brands-section mixes-section hookah-section events-section gallery-page school-page">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 d-none d-sm-block">
             <nav aria-label="breadcrumb" class="breadcrumb-nav">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
@@ -97,7 +99,18 @@
               <h1>Повышай свой скилл с нашими <span class="color-accent">эксклюзивными</span> материалами</h1>
           </div>
 
-          <div class="col-12 col-lg-8 mb-24">
+          <div class="col-12 d-block d-sm-none mb-10">
+            <form method="post" class="form-search">
+              <label><input type="text" placeholder="Поиск по разделу"></label>
+              <button type="submit">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <div class="col-12 col-lg-8 mb-24 mb-10">
             <div class="gallery-box school-box">
               <a href="school-page.html" class="gallery-box__img">
                 <img src="img/gallery1.png" alt="">
@@ -107,18 +120,18 @@
 
                 <div class="gallery-box__footer">
                   <a href="school-page.html" class="btn btn-accent">читать</a>
-                  <div class="date color-accent">
+                  <div class="date color-accent gallery-box-time">
                     <p>15-20 <br>минут</p>
                   </div>
                   <div class="date color-accent">
                     <p>12.07.2021 <br>
-                      обновленно </p>
+                      <span>обновленно</span> </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-8 mb-24">
+          <div class="col-12 col-lg-8 mb-24 mb-10">
             <div class="gallery-box school-box">
               <a href="school-page.html" class="gallery-box__img">
                 <img src="img/gallery1.png" alt="">
@@ -128,18 +141,18 @@
 
                 <div class="gallery-box__footer">
                   <a href="school-page.html" class="btn btn-accent">читать</a>
-                  <div class="date color-accent">
+                  <div class="date color-accent gallery-box-time">
                     <p>15-20 <br>минут</p>
                   </div>
                   <div class="date color-accent">
                     <p>12.07.2021 <br>
-                      обновленно </p>
+                      <span>обновленно</span> </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-8 mb-24">
+          <div class="col-12 col-lg-8 mb-24 mb-10">
             <div class="gallery-box school-box">
               <a href="school-page.html" class="gallery-box__img">
                 <img src="img/gallery1.png" alt="">
@@ -149,12 +162,12 @@
 
                 <div class="gallery-box__footer">
                   <a href="school-page.html" class="btn btn-accent">читать</a>
-                  <div class="date color-accent">
+                  <div class="date color-accent gallery-box-time">
                     <p>15-20 <br>минут</p>
                   </div>
                   <div class="date color-accent">
                     <p>12.07.2021 <br>
-                      обновленно </p>
+                      <span>обновленно</span> </p>
                   </div>
                 </div>
               </div>

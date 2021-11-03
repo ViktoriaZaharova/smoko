@@ -23,6 +23,18 @@ $('.tooltip-box').tooltip();
 
 $('[name="phone"]').mask('+7 (999) 999-99-99');
 
+
+$('.label-toggle').click(function() {
+    var element = $('.toggle-input');
+
+    if(element.is(':checked')) {
+        $('.flavor-card__img').fadeOut();
+    } else {
+        $('.flavor-card__img').css('display', 'flex');
+    }
+});
+
+
 new WOW().init();
 
 $(document).mouseup(function (e) { // событие клика по веб-документу
@@ -32,3 +44,4 @@ $(document).mouseup(function (e) { // событие клика по веб-до
         div.fadeOut(); // скрываем его
     }
 });
+
