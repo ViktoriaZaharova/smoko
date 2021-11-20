@@ -46,27 +46,26 @@ $('.label-toggle').click(function() {
     }
 });
 
-
-new WOW().init();
-
 $(document).ready(function () {
     var heightBlock = $('.box-text-hidden').height();
     if (heightBlock > 70) {
         $('.box-text-hidden').addClass('hidden-block');
-        // $(this).find('.equipment-product').slice(12).hide();
-        $('.box-text-hidden').append('<a href="#" class="color-accent read-view">читать далее</a>');
+        $('.box-text-hidden').parent().append('<a href="#" class="color-accent read-view">читать далее</a>');
     }
+
+    $('.read-view').on('click', function (e) {
+        e.preventDefault();
+        $('.box-text-hidden').removeClass('hidden-block');
+        $(this).hide();
+    });
 });
 
-$('.read-view').on('click', function (e) {
-    e.preventDefault();
-    $('.box-text-hidden').slideDown();
 
-    var onBlock = $('.box-text-hidden').height();
-    if(onBlock <= 0) {
-        $('.read-view').hide();
-    }
-});
+
+
+
+new WOW().init();
+
 
 
 
