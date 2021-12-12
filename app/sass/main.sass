@@ -103,7 +103,9 @@ input, textarea, select
   box-sizing: border-box
   font-family: $default-font
   cursor: pointer
-
+  color: #464646
+  &::placeholder
+    color: #464646
   &:hover, &:focus
     outline: none
     box-shadow: none
@@ -278,22 +280,22 @@ a.color-accent
   padding: 158px 0 150px
   color: #fff
 
-  &:before
-    content: ''
-    position: absolute
-    left: 0
-    bottom: 0
-    width: 100%
-    height: 122px
-    background: url("../img/figure.svg") no-repeat center top
-      size: cover
-    filter: brightness(0) invert(1)
+  //&:before
+  //  content: ''
+  //  position: absolute
+  //  left: 0
+  //  bottom: 0
+  //  width: 100%
+  //  height: 122px
+  //  background: url("../img/figure.svg") no-repeat center top
+  //    size: cover
+  //  filter: brightness(0) invert(1)
   .box-text
     font-size: 18px
     line-height: 151.26%
 
   h1
-    font-size: 64px
+    font-size: 30px
     margin: 0 0 15px
 
 .application
@@ -359,7 +361,7 @@ a.color-accent
 
 .home-information
   padding: 20px 0
-  background: $accent
+  background: $text
   color: #fff
 
 .home-information-box
@@ -384,13 +386,11 @@ a.color-accent
 
 //about
 .about
-  padding: 6px 0 180px
+  padding: 30px 0 180px
 
   h2
-    margin: 0 auto 28px
-
-  .tab-content
-    margin: 27px 0 0
+    margin: 0 auto 20px
+    text-align: left
 
   .tabs-navigation
     .nav-link
@@ -401,7 +401,7 @@ a.color-accent
   justify-content: space-between
   border: none
     radius: 0
-
+  width: 100%
   .nav-link
     padding: 0
     background: #C3F5EC
@@ -419,6 +419,24 @@ a.color-accent
   .nav-link.active
     background: $accent
     color: #fff
+
+.about-apps
+  width: 100%
+  height: 100%
+  border-left: 1px solid $accent
+  padding: 0 0 0 20px
+  h3
+    margin: 0 0 20px
+  .social
+    margin: 20px 0 0
+    max-width: 180px
+  .list-social
+    justify-content: center
+    flex-direction: row
+    align-items: center
+    li
+      margin: 0 10px 0 0
+
 
 
 .sorting-box
@@ -543,7 +561,7 @@ a.color-accent
     fill: $text
 
 .brands-section
-  margin: 20px 0 60px
+  margin: 0 0 60px
   .form-search
     display: none
     margin: 0 0 20px
@@ -570,6 +588,8 @@ a.color-accent
     text-align: center
     text-transform: uppercase
     font-size: 14px
+    padding: 5px
+    font-weight: bold
 
 .menu-brands
   a
@@ -594,16 +614,26 @@ a.color-accent
     color: #fff
     box-shadow: 0px 5px 10px rgba(95, 165, 152, 0.3)
 
+.breadcrumb-nav
+  overflow-x: auto
+
 .breadcrumb
   margin: 0 0 19px
   padding: 0
   background: transparent
   border-radius: 0
   font-size: 14px
-
+  flex-wrap: nowrap
   a
     color: #969696
-
+    white-space: nowrap
+    display: flex
+    align-items: center
+    &:after
+      content: '/'
+      display: inline-block
+      margin: 0 5px
+      color: #969696
     &:hover
       color: $accent
 
@@ -615,11 +645,11 @@ a.color-accent
   font-weight: 700
 
 .breadcrumb-item + .breadcrumb-item
-  padding-left: 7px
+  padding: 0
 
 .breadcrumb-item + .breadcrumb-item::before
-  padding-right: 5px
-  color: #969696
+  display: none
+
 
 .brand-card
   width: 100%
@@ -1342,7 +1372,7 @@ a.color-accent
     width: 176px
     height: 177px
     background: #fff
-    display: none
+    display: flex
     align-items: center
     justify-content: center
     filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.1))
@@ -1610,7 +1640,7 @@ a.color-accent
     margin: 0 0 0 auto
 
   .nav-tabs-my
-    margin: 20px -10px 10px
+    margin: 0 -10px 10px
 
     .nav-link
       font-weight: bold
@@ -2380,7 +2410,7 @@ a.color-accent
 
 .pagination
   align-items: center
-  justify-content: center
+  justify-content: flex-end
   .page-item
     margin: 0 15px 0 0
     &:last-child
@@ -2391,7 +2421,7 @@ a.color-accent
   .active
     .page-link
       background: transparent
-      color: #000
+      color: $accent
 
 .page-link
   border-radius: 0
@@ -2400,12 +2430,20 @@ a.color-accent
   border: none
   background: transparent
   padding: 0
-  color: $accent
+  color: rgba($text, .5)
   font-weight: bold
   font-size: 24px
   &:hover
     background: transparent
     color: #000
+
+.links-load
+  color: $accent
+  text-transform: uppercase
+  margin: 40px 0 0
+  font-weight: 500
+  font-size: 15px
+  display: none
 
 .gallery-photo
   display: flex
@@ -2561,17 +2599,7 @@ a.color-accent
 
 //contacts-page
 .contacts-page
-  padding: 90px 0 200px
-  .list-social
-    flex-direction: row
-    align-items: center
-    justify-content: flex-start
-    width: 100%
-    margin: 0 0 44px
-    li
-      margin: 0 36px 10px 0
-      &:last-child
-        margin: 0 0 10px
+  padding: 20px 0
 
 .contacts-page-app
   padding: 0 0 0 64px
@@ -2582,23 +2610,53 @@ a.color-accent
     margin: 0 0 26px
 
 .contacts-page-item
-  height: 100%
-  h4
-    color: $accent
-    margin: 0 0 18px
-    font-weight: bold
-    font-size: 18px
-    text-transform: uppercase
+  margin: 0 0 40px
+  .links-accent
+    font-weight: 500
+    margin: 0 0 5px
+    &:last-child
+      margin: 0
+  h3
+    text-transform: none
+    font-size: 20px
+    margin: 0 0 20px
   .mail
-    margin: 0 0 40px
-    font-size: 32px
+    font-size: 20px
     font-weight: bold
-    color: #464646
+    color: $accent
     text-transform: uppercase
     &:hover
-      color: $accent
+      color: #464646
+  .box-text
+    margin: 0 0 10px
+    max-width: 700px
+  .application
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    li
+      margin: 0 20px 0 0
+
+.list-social-my
+  flex-direction: row
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: flex-start
+  li
+    margin: 0 20px 0 0
+
+    a
+      width: 50px
+      height: 50px
+      border-radius: 50%
+      fill: #fff
+      background: $accent
+      padding: 10px
 
 .form-call
+  button
+    max-width: none
+    width: 100%
   input
     border: 1px solid #5FA598
       radius: 10px
@@ -2607,15 +2665,42 @@ a.color-accent
     font-size: 14px
     width: 100%
   label
-    margin: 0 0 22px
+    margin: 0 0 10px
     &:last-child
       margin: 0
   textarea
     width: 100%
-    height: 102px
+    height: 140px
     border: 1px solid #5FA598
       radius: 10px
     padding: 11px 16px
+    font-size: 14px
+  select
+    width: 100%
+    border: 1px solid #5FA598
+      radius: 10px
+    height: 40px
+    font-size: 14px
+    font-weight: normal
+    color: #464646
+    max-width: none
+    margin: 0
+
+.label-file
+  width: 100%
+  height: 90px
+  border: 1px solid #5FA598
+    radius: 10px
+  padding: 11px 16px
+  position: relative
+  font-size: 14px
+
+.inp-file
+  display: none
+
+.dropdown-category
+  .dropdown-menu
+    text-transform: uppercase
     font-size: 14px
 
 .dropdown-category-toggle
@@ -2671,20 +2756,25 @@ a.color-accent
     radius: 3px
   &:checked
     ~ .toggle-input-custom
-      right: auto
-      left: 2px
+      right: 2px
+      left: auto
       transform: translate(0,-50%)
 
 .toggle-input-custom
   position: absolute
   top: 50%
   transform: translate(0,-50%)
-  right: 2px
+  right: auto
+  left: 2px
   width: calc(50% - 4px)
   height: calc(100% - 4px)
   border-radius: 3px
   background: $accent
   transition: 1s ease
+
+.news-brand-details
+  .date
+    margin: 0 0 10px
 
 @import "header"
 @import "footer"

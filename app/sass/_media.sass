@@ -75,9 +75,23 @@
 
   .about
     padding: 10px 0 40px
-
+    h2
+      text-align: center
     .tab-content
-      margin: 20px 0 40px
+      color: rgb(106,106,106)
+
+  .about-apps
+    max-width: none
+    padding: 20px 0 0
+    width: 100%
+    margin: 20px 0 0
+    border: none
+      top: 1px solid $accent
+    h3
+      text-align: center
+    .social
+      justify-content: center
+      margin: 20px auto 0
 
   footer
     padding: 20px 0
@@ -185,12 +199,6 @@
   .comments-rating .sorting-box
     margin: 0 22px 0 auto
 
-  .form-call
-    label
-      margin: 0 0 20px
-
-      &:last-child
-        margin: 0 0 20px
 
   .contacts-page-item .mail
     font-size: 24px
@@ -199,8 +207,17 @@
   .contacts-page
     padding: 30px 0 60px
 
-    .list-social
-      margin: 0 0 30px
+  .contacts-page-item
+    margin: 0 0 30px
+    h3
+      font-size: 18px
+      margin: 0 0 15px
+
+  .list-social-my li
+    margin: 0 15px 0 0
+    a
+      width: 40px
+      height: 40px
 
   .header-contacts .menu
     max-width: 600px
@@ -256,6 +273,13 @@
   .application li a
     margin: 0 auto
 
+  .home
+    .box-text
+      max-width: 60%
+    h1
+      br
+        display: none
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 880px)
   .menu
@@ -289,8 +313,6 @@
     max-width: none
 
 @media only screen and (max-width: 768px)
-  .home h1
-    font-size: 50px
 
   .nav-tabs-my .nav-link
     font-size: 14px
@@ -480,14 +502,30 @@
   .rating-page .sorting-box
     margin: 0 10px 0 auto
 
+  .form-call
+    textarea
+      margin: 10px 0
+      height: 120px
+    button
+      height: 40px
+
+  .label-file
+    height: 140px
+
+  .contacts-page-item .application li
+    margin: 0 10px 10px 0
+    &:last-child
+      margin: 0
+
+  .contacts-page-item
+    h3
+      margin: 0 0 10px
+    .mail
+      font-size: 18px
+
+
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 576px)
-  .home h1
-    font-size: 30px
-
-  .home .box-text
-    font-size: 16px
-
+@media only screen and (max-width: 575px)
   h2, .title
     font-size: 22px
 
@@ -593,9 +631,9 @@
 
   .gallery-section
     h1
-      margin: 0 0 10px
+      margin: 0 0 6px
       text-transform: uppercase
-      font-size: 18px
+      font-size: 20px
     .box-text
       font-size: 15px
       line-height: 1.3
@@ -603,6 +641,10 @@
     .date
       font-size: 14px
       color: $accent
+
+  .gallery-banner-mix-col
+    padding: 0
+
 
   .hidden-block
     overflow: hidden
@@ -709,15 +751,11 @@
   .home
     padding: 120px 0 80px
     background-position: 40% center
+    h1
+      font-size: 24px
 
     .box-text
-      padding: 0 120px 0 0
-
-    &:before
-      display: none
-
-    h1
-      color: $accent
+      font-size: 16px
 
   h1
     font-weight: 500
@@ -769,8 +807,11 @@
     overflow-x: auto
     padding: 0 10px 0 0
 
+  header
+    padding: 20px 0 10px
+
   .brands-section
-    margin: 20px 0
+    margin: 10px 0 20px
 
     .form-search
       display: flex
@@ -803,8 +844,29 @@
     h3
       margin: 0 0 20px
 
+
+
+  .brand-box-mix
+    height: auto
+    width: 100%
+    position: relative
+    padding: 10px 0
+    .brand-box__name
+      margin: 0 auto 5px
+    .brand-box__icon
+      box-shadow: 0 1px 7px rgba(#000,.12)
+      width: fit-content
+      margin: 0 auto 10px
+      position: relative
+      padding: 5px
+      max-width: 220px
+      height: 130px
+      img
+        max-height: 100%
+
   .brand-box, .brand-card-img
     box-shadow: 0 1px 14px rgba(#000,.27)
+
 
   .news-brand-card-date
     font-weight: 500
@@ -979,9 +1041,15 @@
 
 
   .shop-card__img
-    margin: -20px 0 0 auto
+    margin: -28px 0 10px auto
     width: 150px
     height: 150px
+    box-shadow: 0 0 15px rgba(#000, .6)
+    border-radius: 50%
+
+  .hookah-box__img, .hookah-card__img
+    box-shadow: 0 0 15px rgba(#000, .6)
+    border-radius: 50%
 
   .shop-card__it-last
     order: 1
@@ -1034,8 +1102,15 @@
   .hookah-card .btn
     height: 35px
 
-  .shop-photo-col, .hookah-photo-col, .gallery-photo-col
-    padding: 0 5px
+  .hookah-card .mail-links
+    margin: 0 0 5px
+
+  .hookah-card .list-social
+    margin: 5px 0 10px
+
+  .hookah-card-info
+    p
+      margin: 0 0 5px
 
   .shop-photo, .hookah-photo, .gallery-photo, .gallery-banner-mix, .video-clip__img
     height: auto
@@ -1080,7 +1155,6 @@
     margin: 0
 
   .video-box__preview
-    //height: 150px
     position: relative
     padding-bottom: 56.25%
     height: 0
@@ -1091,8 +1165,7 @@
       top: 0
       width: 100%
       height: 100%
-    //img
-    //  object-fit: none
+
 
   .video-box__settings
     width: 25px
@@ -1313,7 +1386,67 @@
     margin: 0 0 20px
 
   .mb-35
-    margin-bottom: 15px
+    margin-bottom: 10px
+
+  .shop-photo-col, .hookah-photo-col, .gallery-photo-col
+    padding: 0 5px
+
+  .hookah-photo-col
+    margin-bottom: 10px
+
+  .gallery-row
+    margin: 0 -5px
+
+  .mixes-category-col
+    margin: 0 0 10px
+    padding: 0 5px
+
+  .gallery-photo-col
+    display: none
+    &:nth-child(-n+10)
+      display: block
+
+  .links-load
+    margin: 20px 0 0
+    font-size: 12px
+    display: block
+
+  .mixes-category
+    height: 130px
+    padding: 20px 10px 15px
+    &__icon
+      height: 50px
+
+  .rating-page-img p
+    color: $accent
+
+  .rating-page-img .image
+    width: calc(100% + 20px)
+    margin: 0 -10px
+
+  .breadcrumb
+    margin: 5px 0 19px
+    li
+      margin: 0 20px 0 0
+      a
+        padding: 5px 5px 3px 5px
+        border: 1px solid #ccc
+          right: none
+        position: relative
+        background: #f9f9f9
+        &:after
+          content: ''
+          width: 17px
+          height: 17px
+          border: 1px solid #ccc
+            left: none
+            bottom: none
+          transform: rotate(45deg)
+          position: absolute
+          background: #f9f9f9
+          right: -13px
+          top: 2px
+          z-index: -1
 
 @media only screen and (max-width: 480px)
   .nav-tabs-my
@@ -1500,11 +1633,11 @@
         padding: 0 0 0 20px
 
   .mixes-category
-    height: 140px
+    height: 110px
     font-size: 16px
-
+    padding: 20px 10px 15px
     &__icon
-      height: 57px
+      height: 37px
 
   .mix-box
     &__img
@@ -1673,9 +1806,18 @@
 @media only screen and (max-width: 420px)
   .home
     background-position: 45% center
-
     .box-text
-      padding: 0 30px 0 0
+      max-width: 70%
+      font-size: 15px
+    h1
+      font-size: 22px
+
+  .pagination .page-item
+    margin: 0 10px 0 0
+    font-size: 14px
+
+  .page-link
+    font-size: 14px
 
 @media only screen and (max-width: 360px)
   .header .btn-burger

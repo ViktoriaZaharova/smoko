@@ -20,6 +20,17 @@ $(document).mouseup(function (e){ // событие клика по веб-до�
 });
 
 
+$('.links-load').on('click', function (e) {
+    e.preventDefault();
+    $('.gallery-photo-col:hidden').slice(0, 10).slideDown();
+
+    var onBlock = $('.gallery-photo-col:hidden').length;
+    if(onBlock <= 0) {
+        $('.links-load').hide();
+    }
+});
+
+
 // активная ссылка меню
 $('.menu-brands a').each(function () {
     let location = window.location.href;
@@ -59,10 +70,6 @@ $(document).ready(function () {
         $(this).hide();
     });
 });
-
-
-
-
 
 new WOW().init();
 
